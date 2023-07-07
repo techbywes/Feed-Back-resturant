@@ -7,6 +7,7 @@
 /* NAV STYLING STARTS FROM HERE */
 nav {
   position: fixed;
+  z-index: 1;
   padding: 0.6rem 0;
   background-color: #3f8c07;
   display: flex;
@@ -192,7 +193,7 @@ a.active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.best_toopoint{
+.best_toopoint {
   background-color: black;
   color: whitesmoke;
   width: 10rem;
@@ -203,18 +204,18 @@ a.active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.bestofhteday_discount_text{
+.bestofhteday_discount_text {
   font-weight: 800;
   font-size: 1.5rem;
   color: whitesmoke;
   margin-bottom: 1rem;
 }
 
-.best_para_text{
+.best_para_text {
   font-size: 1rem;
   margin-bottom: 2rem;
 }
-.img_left{
+.img_left {
   width: 8rem;
 }
 .OrderNow_btn {
@@ -234,15 +235,94 @@ a.active {
   color: #a0a603;
 }
 
-.general_div{
+.general_div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.left_wrapup{
+.left_wrapup {
   max-width: 20rem;
 }
 
 /* BEST OF THE DAY STYLING ENDS HERE */
+/* OUR BEST MEAL STYLING STARTS FROM HERE */
+.ourbestmeal_div {
+  padding: 6rem;
+  padding-top: 6rem;
+  background-color: #a0a603;
+}
+.ourbest_meal_title_text {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.bestmeal_para_text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 6rem;
+}
+
+.product_img {
+  max-width: 12rem;
+}
+
+.product_title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.rating {
+  display: flex;
+  gap: 0.4rem;
+}
+.general_menu_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.section_container {
+  padding: 1rem;
+  max-width: 20rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #73a605;
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  cursor: pointer;
+  transition:all  0.6s ease;
+}
+
+.section_container:hover {
+  background-color: #bfa006;
+  border-top-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.rate_price_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 20rem;
+}
+
+.rate_price_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* OUR BEST MEAL STYLING ENDS FROM HERE */
