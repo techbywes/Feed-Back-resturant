@@ -3,6 +3,7 @@ import Nav from "./componenets/Nav";
 import HeroSection from "./componenets/HeroSection";
 import Bestoftheday from "./componenets/Bestoftheday";
 import Ourbestmeal from "./componenets/Ourbestmeal";
+import Besttest from "./componenets/Besttest";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <HeroSection/>
         <Bestoftheday/>
         <Ourbestmeal/>
+        <Besttest/>
       </header>
     </div>
   );
