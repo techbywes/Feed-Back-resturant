@@ -1,6 +1,7 @@
 import "./App.css";
 import Nav from "./componenets/Nav";
 import HeroSection from "./componenets/HeroSection";
+import Bestoftheday from "./componenets/Bestoftheday";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="App-header">
         <Nav/>
         <HeroSection/>
+        <Bestoftheday/>
       </header>
     </div>
   );

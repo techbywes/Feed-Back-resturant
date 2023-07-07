@@ -7,6 +7,7 @@ function HeroSection() {
       <div className="text_btn_div">
         <div className="title_div">
           <h1 className="title_text">BEST FEED-BACK RESTURANT</h1>
+          <div className="line_tex"></div>
         </div>
         <div className="paragraphtext_div">
           <p className="paragraph_text">

@@ -9,7 +9,7 @@ function Nav() {
         </h1>
       </div>
       <div className="input_btn_div">
-        <input className="input_" type="text" />
+        <input className="input_" type="text" placeholder="Search restaurants nearby "/>
         <button className="submit_btn">Search</button>
       </div>
       <ul className="nav_ul">

@@ -29,17 +29,17 @@ nav a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   transition: color 0.6s ease-in-out;
 }
 
 nav a:hover {
-  color: #A0A603;
+  color: #a0a603;
 }
 
 a.active {
-  color: #A0A603;
+  color: #a0a603;
 }
 
 .input_btn_div {
@@ -49,17 +49,18 @@ a.active {
 }
 
 .input_ {
-  padding: 0.8rem 5rem;
+  padding: 0.6rem 5rem;
   width: 20rem;
   outline: none;
   border-radius: 0.4rem;
+  background-color: rgba(240, 248, 255, 0.539);
   border: none;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .submit_btn {
   position: absolute;
-  padding: 0.8rem 0.6rem;
+  padding: 0.6rem 0.6rem;
   border-radius: 0.4rem;
   border: none;
   box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.132);
@@ -67,21 +68,23 @@ a.active {
   color: rgba(0, 0, 0, 0.708);
   font-weight: bold;
   transition: all 0.6s ease-in-out;
+  background-color: black;
+  color: whitesmoke;
 }
 
 .submit_btn:hover {
-  background-color: rgba(0, 0, 0, 0.708);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.893);
+  color: #a0a603;
 }
 
 .logo_text {
   color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-shadow: rgba(0, 0, 0, 0.708);
   cursor: pointer;
 }
 .food_text {
-  color: #A0A603;
+  color: #a0a603;
 }
 
 .go_prmium_btn {
@@ -98,39 +101,43 @@ a.active {
 }
 
 .go_prmium_btn:hover {
-  background-color: rgba(0, 0, 0, 0.591);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.84);
+  color: #a0a603;
 }
 
 /* NAV STYLING ENDS FROM HERE */
 
 /* HERO SECTION STYLING STARTS FROM HERE */
 .hero_div {
-  padding-top: 13rem!important;
+  padding-top: 12rem !important;
   width: 100%;
   height: 100vh;
-  background-color: #A0A603;
+  background-color: #a0a603;
   padding: 3.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.title_div{
-
+.title_div {
   margin-bottom: 3rem;
   max-width: 40rem;
 }
-.title_text{
+.title_text {
   font-size: 4rem;
   line-height: 4rem;
   font-weight: 800;
   color: whitesmoke;
+  margin-bottom: 1rem;
 }
-.paragraphtext_div{
+.line_tex {
+  width: 10rem;
+  border-bottom: 4px solid #3f8c07;
+}
+.paragraphtext_div {
   font-size: 1.3rem;
   max-width: 40rem;
 }
-.paragraph_text{
+.paragraph_text {
   margin-bottom: 1.4rem;
 }
 .learnmore_btn {
@@ -140,17 +147,86 @@ a.active {
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   font-size: 1rem;
-  background-color: #3F8C07;
+  background-color: #3f8c07;
   color: whitesmoke;
   font-weight: 700;
   transition: all 0.4s ease-in-out;
 }
 .learnmore_btn:hover {
-  background-color: rgba(0, 0, 0, 0.591);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.84);
+  color: #a0a603;
 }
 
-.hero_img{
+.hero_img {
   width: 30rem;
 }
 /* HERO SECTION STYLING ENDS HERE */
+
+/* BEST OF THE DAY STYLING STARTS FROM HERE */
+.bestoftheday_div {
+  gap: 1rem;
+  padding: 3.2rem;
+  padding-top: 10rem;
+  background-color: #a0a603;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_div {
+  border-radius: 0.4rem;
+  background-color: #3f8c07;
+  padding: 2rem;
+  width: 40rem;
+  height: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.right_div {
+  border-radius: 0.4rem;
+  background-color: #3f8c07;
+  padding: 2rem;
+  width: 40rem;
+  height: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.best_toopoint{
+  background-color: black;
+  color: whitesmoke;
+  width: 10rem;
+  padding: 0.6rem 2rem;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bestofhteday_discount_text{
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+.best_para_text{
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.OrderNow_btn {
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+.OrderNow_btn:hover {
+  background-color: rgba(0, 0, 0, 0.84);
+  color: #a0a603;
+}
+/* BEST OF THE DAY STYLING ENDS HERE */
