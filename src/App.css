@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAV STYLING STARTS FROM HERE */
+nav {
+  padding: 0.6rem 0;
+  background-color: #3f8c07;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+
+nav > ul {
+  padding: 0.6rem 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  transition: color 0.6s ease-in-out;
+}
+
+nav a:hover {
+  color: #A0A603;
+}
+
+a.active {
+  color: #A0A603;
+}
+
+.input_btn_div {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.input_ {
+  padding: 0.8rem 5rem;
+  width: 20rem;
+  outline: none;
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submit_btn {
+  position: absolute;
+  padding: 0.8rem 0.6rem;
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.132);
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.708);
+  font-weight: bold;
+  transition: all 0.6s ease-in-out;
+}
+
+.submit_btn:hover {
+  background-color: rgba(0, 0, 0, 0.708);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo_text {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-shadow: rgba(0, 0, 0, 0.708);
+  cursor: pointer;
+}
+.food_text {
+  color: #A0A603;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.go_prmium_btn {
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
 }
+
+.go_prmium_btn:hover {
+  background-color: rgba(0, 0, 0, 0.591);
+  color: white;
+}
+
+/* NAV STYLING ENDS FROM HERE */
+
+/* HERO SECTION STYLING STARTS FROM HERE */
+.hero_div {
+  padding-top: 13rem!important;
+  width: 100%;
+  height: 100vh;
+  background-color: #A0A603;
+  padding: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title_div{
+
+  margin-bottom: 3rem;
+  max-width: 40rem;
+}
+.title_text{
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 800;
+  color: whitesmoke;
+}
+.paragraphtext_div{
+  font-size: 1.3rem;
+  max-width: 40rem;
+}
+.paragraph_text{
+  margin-bottom: 1.4rem;
+}
+.learnmore_btn {
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #3F8C07;
+  color: whitesmoke;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+.learnmore_btn:hover {
+  background-color: rgba(0, 0, 0, 0.591);
+  color: white;
+}
+
+.hero_img{
+  width: 30rem;
+}
+/* HERO SECTION STYLING ENDS HERE */
