@@ -561,8 +561,74 @@ a.active {
   height: 2.5rem;
   border: 2px dotted white;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
+
+.profile_img_div:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
 .profile_img {
   width: 2.5rem;
 }
 /* PROFILE IMAGE STYLING ENDS HERE */
+
+/* PROFILE MODEL STYLING STARTS HERE */
+
+
+
+.profile_model {
+  position: absolute;
+  top: 0;
+  right: 0; 
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  background-color: rgb(14, 13, 13);
+  max-width: 20rem;
+  height: 50rem;
+  margin-bottom: 2rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.9);
+  border: 0.1px solid rgba(245, 245, 245, 0.584);
+  z-index: 9999;
+}
+
+
+.user_img_username_name {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.username_name_div {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.p_username_text {
+  color: #f9f9f9;
+  margin-bottom: 0.2rem;
+}
+
+.p_name_text {
+  color: rgba(240, 248, 255, 0.443);
+}
+
+.p_name_text {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin-right: 4rem;
+}
+.close_btn{
+  width: 2.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out
+}
+
+.close_btn:hover{
+  transform: scale(1.2);
+}
+/* PROFILE MODEL STYLING ENDS HERE */
