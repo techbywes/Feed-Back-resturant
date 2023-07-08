@@ -266,7 +266,7 @@ a.active {
 }
 
 .product_img {
-  max-width: 12rem;
+  max-width: 11rem;
 }
 
 .product_title {
@@ -282,7 +282,7 @@ a.active {
   gap: 0.4rem;
   text-align: center;
   justify-content: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .general_menu_div {
   display: flex;
@@ -335,7 +335,7 @@ a.active {
 
 /* BEST TEXT STYLING STARTS FROM HERE */
 .besttext_div {
-  background-color: #73A605;
+  background-color: #73a605;
   padding: 12rem;
   display: flex;
   justify-content: center;
@@ -350,7 +350,7 @@ a.active {
   margin-bottom: 2rem;
 }
 
-.besttes_para_text{
+.besttes_para_text {
   margin-bottom: 1rem;
   color: whitesmoke;
 }
@@ -372,8 +372,6 @@ a.active {
   color: #a0a603;
 }
 
-
-
 .besttest_left_image {
   width: 24rem;
 }
@@ -382,10 +380,145 @@ a.active {
   width: 100%;
 }
 
-.line_tex2{
+.line_tex2 {
   width: 10rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
   border-bottom: 4px solid whitesmoke;
 }
 /* BEST TEXT STYLING ENDS FROM HERE */
+
+/* TESTIMONIAL STYLING STARTS FROM HERE */
+.Testimonial_div {
+  padding: 6rem;
+  background-color: #a0a603;
+}
+.testimonial_tex {
+  text-align: center;
+}
+
+.testimonial_customer_reviews {
+  text-align: center;
+  font-weight: 800;
+}
+/* TESTIMONIAL STYLING ENDS FROM HERE */
+
+/* TESTIMONIAL COPY STARTS FROM HERE */
+/* TestimonialCarousel.css */
+.testimonial-carousel {
+  width: 80%;
+  margin: 0 auto;
+  /* Add any additional styling as per your requirements */
+}
+
+.testimonial {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* Add any additional styling as per your requirements */
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  /* Add any additional styling as per your requirements */
+}
+
+.testimonial-name {
+  margin-top: 10px;
+  font-weight: bold;
+  /* Add any additional styling as per your requirements */
+}
+
+.testimonial-text {
+  margin-top: 10px;
+  /* Add any additional styling as per your requirements */
+}
+
+.testimonial-rating {
+  margin-top: 10px;
+  font-style: italic;
+  /* Add any additional styling as per your requirements */
+}
+
+/* TESTIMONIAL SLIDER STYLING STARTS FROM HERE */
+
+.text_title {
+  text-align: center;
+}
+
+.test_subtitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+.test_general_div {
+  padding: 6rem;
+  background-color: #a0a603;
+  width: 100%;
+  height: 100%;
+}
+
+.quote_para_stars_div {
+  text-align: center;
+  padding: 2rem;
+  background-color: #73A605;
+  border-radius: 0.6rem;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+
+ margin: 0 1rem;
+}
+
+.text_img_div{
+  margin: 0 auto;
+  border: 4px dotted whitesmoke;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+
+.text_img {
+  width: 4.5rem;
+  margin: 0 auto;
+}
+.test_quote {
+  width: 4rem;
+  margin: 0 auto;
+}
+
+.test_rating_starts{
+  margin-bottom: 2rem;
+}
+
+.text_parapgraph {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.test_name{
+  text-align: center;
+  margin-bottom: 0.2rem;
+  transition: color 0.4s ease-in-out;
+  color: #424242;
+}
+
+.test_name:hover{
+  color: white;
+}
+
+.test_desgination{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* TESTIMONIAL SLIDER STYLING ENDS FROM HERE */
