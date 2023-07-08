@@ -5,6 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import quote from "../images/quote.png";
 import StarRating from "./Star_rating";
 import testimonial1 from "../images/testimonial-1.png";
+import testimonial2 from "../images/testimonial-2.png";
+import testimonial3 from "../images/testimonial-3.png";
+import testimonial4 from "../images/testimonial-4.png";
+import testimonial5 from "../images/testimonial-5.png";
 
 export default class AutoPlay extends Component {
   render() {
@@ -35,7 +39,7 @@ export default class AutoPlay extends Component {
               </h3>
               <div className="test_rating_starts">
                 {" "}
-                <StarRating />
+                <StarRating rating={4}/>
               </div>
             </div>
 
@@ -57,12 +61,78 @@ export default class AutoPlay extends Component {
               </h3>
               <div className="test_rating_starts">
                 {" "}
-                <StarRating />
+                <StarRating rating={5}/>
               </div>
             </div>
 
             <div className="text_img_div">
-              <img className="text_img" src={testimonial1} alt="" />
+              <img className="text_img" src={testimonial2} alt="" />
+            </div>
+            <p className="test_name">Rendy Zennda</p>
+            <p className="test_desgination">Designation</p>
+          </div>
+          <div className="add_up">
+            <div className="quote_para_stars_div">
+              <div className="quote_div">
+                <img className="test_quote" src={quote} alt="" />
+              </div>
+
+              <h3 className="text_parapgraph">
+                In massa tempor feugiat nis vitae sapien pellentesque habitant
+                morbi tristique senectus.
+              </h3>
+              <div className="test_rating_starts">
+                {" "}
+                <StarRating rating={3}/>
+              </div>
+            </div>
+
+            <div className="text_img_div">
+              <img className="text_img" src={testimonial3} alt="" />
+            </div>
+            <p className="test_name">Hendrik Morella</p>
+            <p className="test_desgination">Designation</p>
+          </div>
+          <div className="add_up">
+            <div className="quote_para_stars_div">
+              <div className="quote_div">
+                <img className="test_quote" src={quote} alt="" />
+              </div>
+
+              <h3 className="text_parapgraph">
+                In massa tempor feugiat nis vitae sapien pellentesque habitant
+                morbi tristique senectus.
+              </h3>
+              <div className="test_rating_starts">
+                {" "}
+                <StarRating rating={5}/>
+              </div>
+            </div>
+
+            <div className="text_img_div">
+              <img className="text_img" src={testimonial4} alt="" />
+            </div>
+            <p className="test_name">Caroll Xenna</p>
+            <p className="test_desgination">Designation</p>
+          </div>
+          <div className="add_up">
+            <div className="quote_para_stars_div">
+              <div className="quote_div">
+                <img className="test_quote" src={quote} alt="" />
+              </div>
+
+              <h3 className="text_parapgraph">
+                In massa tempor feugiat nis vitae sapien pellentesque habitant
+                morbi tristique senectus.
+              </h3>
+              <div className="test_rating_starts">
+                {" "}
+                <StarRating rating={2}/>
+              </div>
+            </div>
+
+            <div className="text_img_div">
+              <img className="text_img" src={testimonial5} alt="" />
             </div>
             <p className="test_name">Hanna Marriana</p>
             <p className="test_desgination">Designation</p>
@@ -79,73 +149,7 @@ export default class AutoPlay extends Component {
               </h3>
               <div className="test_rating_starts">
                 {" "}
-                <StarRating />
-              </div>
-            </div>
-
-            <div className="text_img_div">
-              <img className="text_img" src={testimonial1} alt="" />
-            </div>
-            <p className="test_name">Hanna Marriana</p>
-            <p className="test_desgination">Designation</p>
-          </div>
-          <div className="add_up">
-            <div className="quote_para_stars_div">
-              <div className="quote_div">
-                <img className="test_quote" src={quote} alt="" />
-              </div>
-
-              <h3 className="text_parapgraph">
-                In massa tempor feugiat nis vitae sapien pellentesque habitant
-                morbi tristique senectus.
-              </h3>
-              <div className="test_rating_starts">
-                {" "}
-                <StarRating />
-              </div>
-            </div>
-
-            <div className="text_img_div">
-              <img className="text_img" src={testimonial1} alt="" />
-            </div>
-            <p className="test_name">Hanna Marriana</p>
-            <p className="test_desgination">Designation</p>
-          </div>
-          <div className="add_up">
-            <div className="quote_para_stars_div">
-              <div className="quote_div">
-                <img className="test_quote" src={quote} alt="" />
-              </div>
-
-              <h3 className="text_parapgraph">
-                In massa tempor feugiat nis vitae sapien pellentesque habitant
-                morbi tristique senectus.
-              </h3>
-              <div className="test_rating_starts">
-                {" "}
-                <StarRating />
-              </div>
-            </div>
-
-            <div className="text_img_div">
-              <img className="text_img" src={testimonial1} alt="" />
-            </div>
-            <p className="test_name">Hanna Marriana</p>
-            <p className="test_desgination">Designation</p>
-          </div>
-          <div className="add_up">
-            <div className="quote_para_stars_div">
-              <div className="quote_div">
-                <img className="test_quote" src={quote} alt="" />
-              </div>
-
-              <h3 className="text_parapgraph">
-                In massa tempor feugiat nis vitae sapien pellentesque habitant
-                morbi tristique senectus.
-              </h3>
-              <div className="test_rating_starts">
-                {" "}
-                <StarRating />
+                <StarRating rating={5}/>
               </div>
             </div>
 
