@@ -5,17 +5,21 @@ import Bestoftheday from "./componenets/Bestoftheday";
 import Ourbestmeal from "./componenets/Ourbestmeal";
 import Besttest from "./componenets/Besttest";
 import TestimonialCarousel from "./componenets/Testimonial";
+import RecentlyAdded from "./componenets/Recently";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Nav/>
-        <HeroSection/>
-        <Bestoftheday/>
-        <Ourbestmeal/>
-        <Besttest/>
-        <TestimonialCarousel/>
+        <Nav />
+        <HeroSection />
+        <RecentlyAdded />
+        <Bestoftheday />
+        <Ourbestmeal />
+        <Besttest />
+        <TestimonialCarousel />
+      
       </header>
     </div>
   );

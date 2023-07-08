@@ -82,7 +82,7 @@ a.active {
 
 .logo_text {
   color: whitesmoke;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-shadow: rgba(0, 0, 0, 0.708);
   cursor: pointer;
 }
@@ -251,7 +251,7 @@ a.active {
 .ourbestmeal_div {
   padding: 6rem;
   padding-top: 6rem;
-  background-color: #a0a603;
+  background-color: #a1b225;
 }
 .ourbest_meal_title_text {
   text-align: center;
@@ -457,7 +457,7 @@ a.active {
 }
 .test_general_div {
   padding: 6rem;
-  background-color: #a0a603;
+  background-color: #a1b225;
   width: 100%;
   height: 100%;
 }
@@ -465,16 +465,16 @@ a.active {
 .quote_para_stars_div {
   text-align: center;
   padding: 2rem;
-  background-color: #73A605;
+  background-color: #73a605;
   border-radius: 0.6rem;
   height: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
 
- margin: 0 1rem;
+  margin: 0 1rem;
 }
 
-.text_img_div{
+.text_img_div {
   margin: 0 auto;
   border: 4px dotted whitesmoke;
   width: 4.5rem;
@@ -497,7 +497,7 @@ a.active {
   margin: 0 auto;
 }
 
-.test_rating_starts{
+.test_rating_starts {
   margin-bottom: 2rem;
 }
 
@@ -506,20 +506,63 @@ a.active {
   margin-bottom: 0.8rem;
 }
 
-.test_name{
+.test_name {
   text-align: center;
   margin-bottom: 0.2rem;
   transition: color 0.4s ease-in-out;
   color: #424242;
 }
 
-.test_name:hover{
+.test_name:hover {
   color: white;
 }
 
-.test_desgination{
+.test_desgination {
   text-align: center;
   margin-bottom: 2rem;
 }
 
 /* TESTIMONIAL SLIDER STYLING ENDS FROM HERE */
+
+/* Recently Added STYLE STARTS FROM HERE */
+.RecentlyAdded {
+  background-color: #93a605de;
+}
+
+/* Recently Added STYLE ENDS FROM HERE */
+
+/* FOOD CLASS STYLEING STARTS FROM HERE */
+.food_class_div {
+  width: 100%;
+  height: 4rem;
+  margin-top: 6rem;
+  background-color: rgba(0, 0, 0, 0.881);
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.fresh_img {
+  width: 10rem;
+}
+
+/* FOOD CLASS STYLEING STARTS FROM HERE */
+
+/* PROFILE IMAGE STYLING STARTS HERE */
+
+.profile_img_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px dotted white;
+  cursor: pointer;
+}
+.profile_img {
+  width: 2.5rem;
+}
+/* PROFILE IMAGE STYLING ENDS HERE */

@@ -9,10 +9,12 @@ import menu6 from "../images/menu-6.png";
 import menu7 from "../images/menu-7.png";
 import menu8 from "../images/menu-8.png";
 
-function Ourbestmeal() {
+
+
+function RecentlyAdded() {
   return (
-    <section className="ourbestmeal_div">
-      <h2 className="ourbest_meal_title_text">Most Viewed</h2>
+    <section className="ourbestmeal_div RecentlyAdded">
+      <h2 className="ourbest_meal_title_text">Recently Added</h2>
       <p className="bestmeal_para_text">
         All in good taste elementum integer enim neque volutpat ac.
       </p>
@@ -126,4 +128,4 @@ function Ourbestmeal() {
   );
 }
 
-export default Ourbestmeal;
+export default RecentlyAdded;

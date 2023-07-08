@@ -1,10 +1,12 @@
 import React from "react";
 import leftimage from "../images/bugger-left.png";
 import rightimage from "../images/drink-right.png";
+import Foodclass from "./Foodclass";
 
 function Bestoftheday() {
   return (
     <section className="bestoftheday_div">
+    
       <div className="left_div">
         <div className="general_div">
           <div className="left_wrapup">
