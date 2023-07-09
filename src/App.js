@@ -8,20 +8,18 @@ import TestimonialCarousel from "./componenets/Testimonial";
 import RecentlyAdded from "./componenets/Recently";
 import ProfileModel from "./componenets/ProfileModel";
 
-
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Nav />
-       
+
         <HeroSection />
         <RecentlyAdded />
         <Bestoftheday />
         <Ourbestmeal />
         <Besttest />
         <TestimonialCarousel />
-        
       </header>
     </div>
   );

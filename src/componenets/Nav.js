@@ -9,14 +9,7 @@ function Nav() {
           <span className="food_text">FEED</span> BACK POST
         </h1>
       </div>
-      <div className="input_btn_div">
-        <input
-          className="input_"
-          type="text"
-          placeholder="Search restaurants nearby "
-        />
-        <button className="submit_btn">Search</button>
-      </div>
+     
       <ul className="nav_ul">
         <li>
           <a href="/" className="active">
@@ -30,6 +23,14 @@ function Nav() {
         <li>
           <a href="/">About</a>
         </li>
+
+        <li>
+          <a href="/">Contact</a>
+        </li>
+        <li>
+          <a href="/">Write Review</a>
+        </li>
+
 
         <button className="go_prmium_btn">Go premium</button>
         <li>

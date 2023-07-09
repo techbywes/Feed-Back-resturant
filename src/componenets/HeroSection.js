@@ -1,5 +1,6 @@
 import React from "react";
-import buggerimage from "../images/bugger.png"
+import buggerimage from "../images/bugger.png";
+import Search from "./Search";
 
 function HeroSection() {
   return (
@@ -11,13 +12,12 @@ function HeroSection() {
         </div>
         <div className="paragraphtext_div">
           <p className="paragraph_text">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes.
+            Find your next great culinary experience with <br />{" "}
+            <span className="feed_back_text">FEED BACK POST</span> Guide
           </p>
         </div>
-
-        <button className="learnmore_btn">Learn about us</button>
+        <Search />
+        {/* <button className="learnmore_btn">Learn about us</button> */}
       </div>
       <div className="img_div">
         <img className="hero_img" src={buggerimage} alt="" />

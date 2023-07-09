@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 /* NAV STYLING STARTS FROM HERE */
 nav {
   position: fixed;
@@ -32,7 +33,7 @@ nav a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   transition: color 0.6s ease-in-out;
 }
@@ -52,8 +53,10 @@ a.active {
 }
 
 .input_ {
-  padding: 0.6rem 5rem;
-  width: 20rem;
+  font-size: 1.2rem;
+  padding: 1rem 5rem;
+  width: 30rem;
+  height: 4rem;
   outline: none;
   border-radius: 0.4rem;
   background-color: rgba(240, 248, 255, 0.539);
@@ -61,28 +64,33 @@ a.active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.search_icon{
+  width: 1.5rem;
+}
+
 .submit_btn {
   position: absolute;
-  padding: 0.6rem 0.6rem;
+  padding: 1rem 0.6rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 0.4rem;
   border: none;
   box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.132);
   cursor: pointer;
   color: rgba(0, 0, 0, 0.708);
   font-weight: bold;
-  transition: all 0.6s ease-in-out;
-  background-color: black;
-  color: whitesmoke;
+  transition: all 0.4s ease-in-out;
+  background-color: #3f8c07;
 }
 
 .submit_btn:hover {
-  background-color: rgba(0, 0, 0, 0.893);
+  background-color: rgba(0, 0, 0, 0.788);
   color: #a0a603;
 }
 
 .logo_text {
   color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-shadow: rgba(0, 0, 0, 0.708);
   cursor: pointer;
 }
@@ -576,25 +584,22 @@ a.active {
 
 /* PROFILE MODEL STYLING STARTS HERE */
 
-
-
 .profile_model {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0; 
+  right: 0;
   padding-top: 1rem;
   padding-left: 1.5rem;
   background-color: rgb(14, 13, 13);
-  max-width: 20rem;
+  max-width: 30rem;
   height: 50rem;
   margin-bottom: 2rem;
   border-radius: 0.6rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.8), 0 2px 30px rgba(0, 0, 0, 0.8),
     0 8px 16px rgba(0, 0, 0, 0.9);
   border: 0.1px solid rgba(245, 245, 245, 0.584);
-  z-index: 9999;
+  z-index: 999999;
 }
-
 
 .user_img_username_name {
   display: flex;
@@ -621,14 +626,44 @@ a.active {
   font-weight: lighter;
   margin-right: 4rem;
 }
-.close_btn{
+.close_btn {
   width: 2.5rem;
   margin-right: 1rem;
   cursor: pointer;
-  transition: all 0.4s ease-in-out
+  transition: all 0.4s ease-in-out;
 }
 
-.close_btn:hover{
+.close_btn:hover {
   transform: scale(1.2);
 }
 /* PROFILE MODEL STYLING ENDS HERE */
+
+/* PROFILE MODEL OVERLAY AND CROLL STYLE STARTS FROM HERE */
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3e8c0738;
+  z-index: 99999;
+  backdrop-filter: blur(1.5px);
+}
+
+/* PROFILE MODEL OVERLAY AND CROLL STYLE ENDS FROM HERE */
+
+
+/* REVIEW FORM STYLING STARTS FROM HERE */
+.reviws_div{
+  border: 2px solid red;
+}
+/* REVIEW FORM STYLING ENDS FROM HERE */

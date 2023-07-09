@@ -15,7 +15,7 @@ function ProfileModel() {
         <div className="profile_model">
           <div className="user_img_username_name">
             <div className="profile_img_div">
-              <Profile/>
+              <Profile />
             </div>
             <div className="username_name_div">
               <p className="p_username_text">Techbywes</p>
