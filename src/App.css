@@ -64,7 +64,7 @@ a.active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.search_icon{
+.search_icon {
   width: 1.5rem;
 }
 
@@ -93,6 +93,7 @@ a.active {
   font-size: 1.3rem;
   text-shadow: rgba(0, 0, 0, 0.708);
   cursor: pointer;
+  margin-right: 10rem;
 }
 .food_text {
   color: #a0a603;
@@ -560,6 +561,16 @@ a.active {
 
 /* PROFILE IMAGE STYLING STARTS HERE */
 
+.profile_img_open_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px dotted white;
+}
+
 .profile_img_div {
   display: flex;
   justify-content: center;
@@ -636,6 +647,36 @@ a.active {
 .close_btn:hover {
   transform: scale(1.2);
 }
+
+.open_model_user_img {
+  width: 2.5rem;
+}
+
+.new_model_a {
+  display: block;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  margin-left: 2rem;
+  color: rgba(240, 248, 255, 0.443);
+}
+
+.img_icon_div{
+  display: flex;
+  align-items: center;
+}
+
+.new_model_a:hover {
+  color: #a0a603;
+}
+
+.icon_img {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: ccenter;
+  width: 1rem;
+  margin-left: 1rem;
+}
 /* PROFILE MODEL STYLING ENDS HERE */
 
 /* PROFILE MODEL OVERLAY AND CROLL STYLE STARTS FROM HERE */
@@ -661,9 +702,8 @@ body.no-scroll {
 
 /* PROFILE MODEL OVERLAY AND CROLL STYLE ENDS FROM HERE */
 
-
 /* REVIEW FORM STYLING STARTS FROM HERE */
-.reviws_div{
+.reviws_div {
   border: 2px solid red;
 }
 /* REVIEW FORM STYLING ENDS FROM HERE */

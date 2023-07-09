@@ -1,26 +1,26 @@
 import React, { useState, useRef, useEffect } from "react";
 import profileimage from "../images/testimonial-1.png";
-import ProfileModel from "./ProfileModel";
+import ProfileModel from "../componenets/ProfileModel";
 
 function Profile() {
   const [isOpen, setIsOpen] = useState(false);
   const profileRef = useRef(null);
 
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   const handleProfileIconClick = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleCloseModel = () => {
-    setIsOpen(false);
+  const handleClickOutside = (event) => {
+    if (profileRef.current && !profileRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
   };
 
   useEffect(() => {
-    const handleClickOutside = event => {
-      if (profileRef.current && !profileRef.current.contains(event.target)) {
-        setIsOpen(false);
-      }
-    };
-
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
@@ -37,18 +37,9 @@ function Profile() {
   }, [isOpen]);
 
   return (
-    <div
-      className="profile_general_div"
-      ref={profileRef}
-      onClick={handleProfileIconClick}
-    >
-      {isOpen && (
-        <>
-          <ProfileModel />
-          <div className="overlay"></div>
-        </>
-      )}
-      <div className="profile_img_div">
+    <div className="profile_general_div" ref={profileRef}>
+      {isOpen && <ProfileModel />}
+      <div className="profile_img_div" onClick={handleProfileIconClick}>
         <img className="profile_img" src={profileimage} alt="" />
       </div>
     </div>
