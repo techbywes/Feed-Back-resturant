@@ -779,7 +779,7 @@ body.no-scroll {
 .address_icon,
 .social_icon {
   width: 1.5rem;
-  filter: drop-shadow(2px 2px 4px #bfa006);
+  filter: drop-shadow(1px 1px 1px #000000);
 }
 
 .footer_name_phone_address_div {
