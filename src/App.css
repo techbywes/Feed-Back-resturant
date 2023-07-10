@@ -803,8 +803,8 @@ body.no-scroll {
   color: whitesmoke;
   line-height: 2rem;
 }
-.support_ul{
- margin-left: -2rem;
+.support_ul {
+  margin-left: -2rem;
 }
 .support_title_ {
   color: whitesmoke;
@@ -900,11 +900,11 @@ body.no-scroll {
   border-radius: 2rem;
   padding: 6rem;
   background-color: #010101;
-  width: 60%;
-  height: 100%;
+  width: 50%;
+  height: 85%;
   margin: 0 auto;
   border-radius: 0.6rem;
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.8), 0 2px 30px rgba(0, 0, 0, 0.8),
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4), 0 2px 30px rgba(0, 0, 0, 0.2),
     0 8px 16px rgba(0, 0, 0, 0.9);
   border: 0.1px solid rgba(245, 245, 245, 0.584);
   z-index: 999999;

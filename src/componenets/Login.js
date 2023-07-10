@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState} from "react";
 import close from "../images/close.png";
 import {
   MDBInput,
@@ -10,20 +10,12 @@ import {
 } from "mdb-react-ui-kit";
 
 export default function LoginForm() {
-  const [isOpen, setIsOpen] = useState(true);
-
-  const handleProfileIconClick = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
-    { isOpen && (
       <div className="login_form_div_">
         <img
           className="login_in_close_icon"
           src={close}
-          onClick={handleProfileIconClick}
         />
         <form>
           <MDBInput
@@ -87,7 +79,6 @@ export default function LoginForm() {
           </div>
         </form>
       </div>
-    )}
     </>
   );
 }

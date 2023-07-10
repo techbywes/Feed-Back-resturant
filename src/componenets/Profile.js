@@ -14,7 +14,7 @@ function Profile() {
     setIsOpen(!isOpen);
   };
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = event => {
     if (profileRef.current && !profileRef.current.contains(event.target)) {
       setIsOpen(false);
     }

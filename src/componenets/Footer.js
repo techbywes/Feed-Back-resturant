@@ -83,7 +83,7 @@ function Footer() {
             <h2 className="email_title_">Email</h2>
             <div className="email_id_">
               <img className="email_icon" src={email} />
-              <p className="email_id_">contact@foodcourt.com</p>
+              <p className="email_id_">contact@feedbackpost.com</p>
             </div>
           </div>
         </div>
