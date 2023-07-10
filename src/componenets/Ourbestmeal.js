@@ -30,7 +30,7 @@ function RecentlyAdded() {
 
   return (
     <section className="ourbestmeal_div RecentlyAdded">
-      <h2 className="ourbest_meal_title_text">Recently Added</h2>
+      <h2 className="ourbest_meal_title_text">Most Viewed</h2>
       <p className="bestmeal_para_text">
         All in good taste elementum integer enim neque volutpat ac.
       </p>

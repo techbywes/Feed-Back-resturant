@@ -8,6 +8,7 @@ import TestimonialCarousel from "./componenets/Testimonial";
 import RecentlyAdded from "./componenets/Recently";
 import ProfileModel from "./componenets/ProfileModel";
 import Footer from "./componenets/Footer";
+import LoginForm from "./componenets/Login";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Besttest />
         <TestimonialCarousel />
         <Footer/>
+        <LoginForm/>
       </header>
     </div>
   );
