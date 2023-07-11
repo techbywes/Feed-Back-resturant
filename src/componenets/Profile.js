@@ -20,6 +20,11 @@ function Profile() {
     }
   };
 
+  const handleItemSelect = () => {
+    setIsOpen(false);
+  };
+
+
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
 
@@ -38,7 +43,7 @@ function Profile() {
 
   return (
     <div className="profile_general_div" ref={profileRef}>
-      {isOpen && <ProfileModel />}
+      {isOpen && <ProfileModel onClose={handleItemSelect} />}
       <div className="profile_img_div" onClick={handleProfileIconClick}>
         <img className="profile_img" src={profileimage} alt="" />
       </div>

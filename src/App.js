@@ -6,8 +6,8 @@ import Ourbestmeal from "./componenets/Ourbestmeal";
 import Besttest from "./componenets/Besttest";
 import TestimonialCarousel from "./componenets/Testimonial";
 import RecentlyAdded from "./componenets/Recently";
-import ProfileModel from "./componenets/ProfileModel";
 import Footer from "./componenets/Footer";
+import Register from "./componenets/Register";
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
         <Besttest />
         <TestimonialCarousel />
         <Footer/>
+        {/* <Register/> */}
       </header>
     </div>
   );

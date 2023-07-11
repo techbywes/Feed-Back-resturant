@@ -17,6 +17,10 @@ nav {
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav > ul {
   padding: 0.6rem 0;
   display: flex;
@@ -55,7 +59,7 @@ a.active {
 .input_ {
   font-size: 1.2rem;
   padding: 1rem 5rem;
-  width: 30rem;
+  width: 100%;
   height: 4rem;
   outline: none;
   border-radius: 0.4rem;
@@ -110,6 +114,7 @@ a.active {
   color: whitesmoke;
   font-weight: 700;
   transition: all 0.4s ease-in-out;
+  white-space: nowrap;
 }
 
 .go_prmium_btn:hover {
@@ -123,12 +128,13 @@ a.active {
 .hero_div {
   padding-top: 12rem !important;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #a0a603;
   padding: 3.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap-reverse;
 }
 .title_div {
   margin-bottom: 3rem;
@@ -470,6 +476,11 @@ a.active {
   height: 100%;
 }
 
+
+.slick-slider{
+  flex-wrap: wrap!important;
+}
+
 .quote_para_stars_div {
   text-align: center;
   padding: 2rem;
@@ -684,10 +695,6 @@ body.no-scroll {
   overflow: hidden;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -778,14 +785,14 @@ body.no-scroll {
 .address_icon,
 .social_icon {
   margin-bottom: 1rem;
-  width: 1.5rem;
+  width: 1.6rem;
   filter: drop-shadow(1px 1px 1px #000000);
 }
 
 .footer_name_phone_address_div {
   padding: 4rem;
   display: flex;
-  gap: 3.3rem;
+  gap: 3.1rem;
   flex-wrap: wrap;
 }
 
@@ -901,7 +908,7 @@ body.no-scroll {
   padding: 6rem;
   background-color: #010101;
   width: 50%;
-  height: 85%;
+  height: 99%;
   margin: 0 auto;
   border-radius: 0.6rem;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4), 0 2px 30px rgba(0, 0, 0, 0.2),
@@ -976,3 +983,20 @@ body.no-scroll {
 }
 
 /* LOGIN FORM STYLING ENDS FROM HERE */
+
+/* REGISTER STYLING STARTS FROM HERE */
+.form-check-input[type="checkbox"]:checked {
+  background-image: none;
+  background-color: #a1b225;
+}
+
+.form-check-input:checked {
+  border-color: #a1b225;
+}
+
+.form-check-input:checked {
+  background-color: #a1b225;
+  border-color: #a1b225;
+}
+
+/* RESGISTER STYLING ENDS FROM HERE */
