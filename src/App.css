@@ -1193,7 +1193,7 @@ body.no-scroll {
 }
 
 .need_help_text {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: black;
   font-weight: 600;
 }
@@ -1206,15 +1206,20 @@ body.no-scroll {
 .need_help_div_ {
   display: flex;
   justify-content: space-evenly;
-  /* flex-wrap: wrap; */
   gap: 4rem;
+
+  flex-wrap: wrap;
   width: 100%;
+  height: 100%;
 }
 
 .left_text_check_food_ {
-  width: 50%;
+  width: 40%;
 }
 
+.right_need_help_div {
+  width: 40%;
+}
 .phone_phone_number {
   display: flex;
   gap: 0.8rem;

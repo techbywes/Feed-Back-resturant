@@ -4,7 +4,7 @@ import bugaIMG from "../images/bugger.png";
 import signature from "../images/signature.png";
 import bugger2 from "../images/bugger2.png";
 import Footer from "./Footer";
-import phone from "../images/phone.png";
+import phone from "../images/phone2.png";
 import resturant from "../images/restaurant.png";
 
 function About() {
