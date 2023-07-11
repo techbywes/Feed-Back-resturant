@@ -9,9 +9,16 @@ function Nav() {
   const ShowAbout = () => {
     navigate("/About", { replace: true });
   };
+
+
+  const GoHome = () => {
+    navigate("/", { replace: true });
+  };
+
+
   return (
     <nav>
-      <div className="logo_div">
+      <div className="logo_div" onClick={GoHome}>
         <h1 className="logo_text">
           <span className="food_text">FEED</span> BACK POST
         </h1>

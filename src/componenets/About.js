@@ -6,6 +6,9 @@ import bugger2 from "../images/bugger2.png";
 import Footer from "./Footer";
 import phone from "../images/phone2.png";
 import resturant from "../images/restaurant.png";
+import map from "../images/map2.png";
+import mail from "../images/email2.png";
+import web from "../images/web.png";
 
 function About() {
   return (
@@ -132,6 +135,45 @@ function About() {
                   Feed Back Post Restaurant 1 - Address, Fax 99 Roving St, Big
                   City PKU
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="address_phoe_email_website_div__">
+            <div className="address_text_icon_div___">
+              <div className="icon_div_adress_">
+                <img className="map2_icon__" src={map} />
+              </div>
+              <div className="adress_fax_text__">
+                <p className="Adress_text__g">Address</p>
+                <p className="fax_addres_text">Fax 99 Roving St, Big</p>
+              </div>
+            </div>
+
+            <div className="address_text_icon_div___">
+              <div className="icon_div_adress_">
+                <img className="map2_icon__" src={phone} />
+              </div>
+              <div className="adress_fax_text__">
+                <p className="Adress_text__g">Phone</p>
+                <p className="fax_addres_text">+123-234-1234</p>
+              </div>
+            </div>
+            <div className="address_text_icon_div___">
+              <div className="icon_div_adress_">
+                <img className="map2_icon__" src={mail} />
+              </div>
+              <div className="adress_fax_text__">
+                <p className="Adress_text__g">Email</p>
+                <p className="fax_addres_text">admin@example.com</p>
+              </div>
+            </div>
+            <div className="address_text_icon_div___">
+              <div className="icon_div_adress_">
+                <img className="map2_icon__" src={web} />
+              </div>
+              <div className="adress_fax_text__">
+                <p className="Adress_text__g">Website</p>
+                <p className="fax_addres_text">www.example.com</p>
               </div>
             </div>
           </div>

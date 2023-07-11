@@ -1245,4 +1245,31 @@ body.no-scroll {
   border-top: 2px dotted black;
   margin: 1rem 0;
 }
+
+.address_phoe_email_website_div__{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  flex-wrap: wrap;
+}
+
+.map2_icon__{
+  width: 2rem;
+}
+
+.address_text_icon_div___{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Adress_text__g{
+  margin: 0;
+}
+
+.Adress_text__g{
+  color: black;
+  font-weight: 600;
+}
 /* ABOUT US PAGE STYLING ENDS FROM HERE */
