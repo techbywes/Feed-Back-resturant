@@ -1,29 +1,20 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Nav from "./componenets/Nav";
-import HeroSection from "./componenets/HeroSection";
-import Bestoftheday from "./componenets/Bestoftheday";
-import Ourbestmeal from "./componenets/Ourbestmeal";
-import Besttest from "./componenets/Besttest";
-import TestimonialCarousel from "./componenets/Testimonial";
-import RecentlyAdded from "./componenets/Recently";
-import Footer from "./componenets/Footer";
-import Register from "./componenets/Register";
-
+import Home from "./componenets/Home";
+import Faq from "./componenets/FAQ";
+import About from "./componenets/About";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Nav />
-        <HeroSection />
-        <RecentlyAdded />
-        <Bestoftheday />
-        <Ourbestmeal />
-        <Besttest />
-        <TestimonialCarousel />
-        <Footer/>
-        {/* <Register/> */}
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Faq" element={<Faq />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

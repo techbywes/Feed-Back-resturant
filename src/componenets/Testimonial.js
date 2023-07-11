@@ -11,7 +11,8 @@ import testimonial4 from "../images/testimonial-4.png";
 import testimonial5 from "../images/testimonial-5.png";
 import SubmitReview from "./SubmiteReview";
 
-export default class AutoPlay extends Component {
+
+export default class TestimonialCarousel extends Component {
   render() {
     const settings = {
       dots: true,

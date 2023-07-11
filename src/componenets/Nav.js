@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Profile from "../componenets/Profile";
 
+
 function Nav() {
+  const navigate = useNavigate();
+
+  const ShowAbout = () => {
+    navigate("/About", { replace: true });
+  };
   return (
     <nav>
       <div className="logo_div">
@@ -9,7 +16,7 @@ function Nav() {
           <span className="food_text">FEED</span> BACK POST
         </h1>
       </div>
-     
+
       <ul className="nav_ul">
         <li>
           <a href="/" className="active">
@@ -17,20 +24,21 @@ function Nav() {
           </a>
         </li>
         <li>
-          <a href="/">Favourites</a>
+          <a href="#">Favourites</a>
         </li>
 
         <li>
-          <a href="/">About</a>
+          <a href="#" onClick={ShowAbout}>
+            About
+          </a>
         </li>
 
         <li>
-          <a href="/">Contact</a>
+          <a href="#">Contact</a>
         </li>
         <li>
-          <a href="/">Write Review</a>
+          <a href="#">Write Review</a>
         </li>
-
 
         <button className="go_prmium_btn">Go premium</button>
         <li>

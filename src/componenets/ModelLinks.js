@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import login from "../images/enter.png";
 import register from "../images/register.png";
 import myfavourite from "../images/heart.png";
 import settings from "../images/setting.png";
 import faq from "../images/faq.png";
 import logout from "../images/power-off.png";
+
 
 import close from "../images/close.png";
 import {
@@ -33,6 +35,13 @@ function ModelLinks() {
   const handleProfileIconClick2 = () => {
     setShowMode2(false);
   };
+
+  const navigate = useNavigate();
+
+  const ShowFaq = () => {
+    navigate("/Faq", { replace: true });
+  };
+
   return (
     <div>
       <div className="model_link_gen_div">
@@ -213,7 +222,7 @@ function ModelLinks() {
           <li className="model_li">
             <div className="img_icon_div">
               <img className="icon_img" src={faq} />
-              <a className="new_model_a" href="#">
+              <a className="new_model_a" href="#" onClick={ShowFaq}>
                 FAQ
               </a>
             </div>
