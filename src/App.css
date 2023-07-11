@@ -1119,26 +1119,39 @@ body.no-scroll {
   font-size: 0.9rem;
 }
 
+.good_food_text_{
+  font-size: 2.1rem;
+  color: black;
+  font-weight: 800;
+}
 
 .right_text_div{
   flex-wrap: wrap;
 }
 
 .good_food_div_{
+  margin-top: 10rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  gap: 2rem;
 }
 
 ._signature_{
   width: 8rem;
+  filter: drop-shadow(0 0 10px #000000);
 }
 
 .img_signature_{
-  width: 10rem;
+  width: 32rem;
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 10px #000000);
 }
 
-.left_text_div_{
-  border: 2px solid red;
+.author_name_{
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
+
 /* ABOUT US PAGE STYLING ENDS FROM HERE */
