@@ -1119,17 +1119,17 @@ body.no-scroll {
   font-size: 0.9rem;
 }
 
-.good_food_text_{
+.good_food_text_ {
   font-size: 2.1rem;
   color: black;
   font-weight: 800;
 }
 
-.right_text_div{
+.right_text_div {
   flex-wrap: wrap;
 }
 
-.good_food_div_{
+.good_food_div_ {
   margin-top: 10rem;
   display: flex;
   justify-content: space-evenly;
@@ -1137,21 +1137,107 @@ body.no-scroll {
   gap: 2rem;
 }
 
-._signature_{
+._signature_ {
   width: 8rem;
   filter: drop-shadow(0 0 10px #000000);
 }
 
-.img_signature_{
+.img_signature_ {
   width: 32rem;
   border-radius: 1rem;
   filter: drop-shadow(0 0 10px #000000);
 }
 
-.author_name_{
-  color: black;
+.author_name_ {
+  color: #3f8c07;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
+.line_div {
+  margin: 2rem 0;
+  width: 6rem;
+  border-top: 4px solid #3f8c07;
+}
+
+.need_help_div_ {
+  margin-top: 10rem;
+}
+
+.location_btn_ {
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+.location_btn_:hover {
+  background-color: rgba(0, 0, 0, 0.84);
+  color: #a0a603;
+}
+
+.right_need_help_div {
+  margin: 0 4rem;
+}
+
+.help_address_div__ {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 6rem;
+}
+
+.need_help_text {
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 600;
+}
+
+.call_resturant_ {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.need_help_div_ {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  gap: 4rem;
+  width: 100%;
+}
+
+.left_text_check_food_ {
+  width: 50%;
+}
+
+.phone_phone_number {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.mail_text {
+  margin-top: -1rem;
+}
+
+.resturant_icon_ {
+  width: 2rem;
+  margin: 0 1rem;
+}
+
+.adress_icon_div__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dotted_line_div {
+  margin-left: 2rem;
+  border-top: 2px dotted black;
+  margin: 1rem 0;
+}
 /* ABOUT US PAGE STYLING ENDS FROM HERE */
