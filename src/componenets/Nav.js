@@ -33,7 +33,7 @@ function Nav() {
         </li>
 
         <li>
-          <a href="#" onClick={ShowAbout}>
+          <a href="#"   onClick={ShowAbout}>
             About
           </a>
         </li>

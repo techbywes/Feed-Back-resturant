@@ -18,7 +18,7 @@ function Contact() {
             <div className="left_text_check_food_">
               <div className="left_text_div_">
                 <h2 className="good_food_text_">
-                  Check Your Food Court Restaurant location.
+                  Check Your Feed Back Post  Restaurant location.
                 </h2>
                 <div className="line_div"></div>
                 <p className="good_food_orar_text">
