@@ -1161,9 +1161,6 @@ body.no-scroll {
   border-top: 4px solid #3f8c07;
 }
 
-.need_help_div_ {
-  margin-top: 10rem;
-}
 
 .location_btn_ {
   padding: 0.8rem 1rem;
@@ -1207,7 +1204,7 @@ body.no-scroll {
   display: flex;
   justify-content: space-evenly;
   gap: 4rem;
-
+  margin-top: 10rem;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
@@ -1246,7 +1243,7 @@ body.no-scroll {
   margin: 1rem 0;
 }
 
-.address_phoe_email_website_div__{
+.address_phoe_email_website_div__ {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1254,22 +1251,41 @@ body.no-scroll {
   flex-wrap: wrap;
 }
 
-.map2_icon__{
+.map2_icon__ {
   width: 2rem;
 }
 
-.address_text_icon_div___{
+.address_text_icon_div___ {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.Adress_text__g{
+.Adress_text__g {
   margin: 0;
 }
 
-.Adress_text__g{
+.Adress_text__g {
   color: black;
   font-weight: 600;
 }
 /* ABOUT US PAGE STYLING ENDS FROM HERE */
+
+
+/* CONTACT PAGE STYLING STARTS FROM HERE */
+.contact_div{
+  padding: 8rem;
+  padding-top: 12rem;
+  background-color: #a0a603;
+}
+
+
+.need_help_div_2 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+/* CONTACTS PAGE STYLING ENDS FROM HERE */

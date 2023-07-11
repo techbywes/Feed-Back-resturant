@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./componenets/Home";
 import Faq from "./componenets/FAQ";
 import About from "./componenets/About";
+import Contact from "./componenets/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Faq" element={<Faq />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>
