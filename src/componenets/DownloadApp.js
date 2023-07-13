@@ -11,7 +11,7 @@ function DownloadApp() {
       </div>
       <div className="dowload_text_div">
         <p className="download_para_text">
-          Use the app to find the best resturants and hostels everywhere.
+          Use the app to find the best resturants <br /> and hostels everywhere.
         </p>
       </div>
       <div className="phone_op_icons">

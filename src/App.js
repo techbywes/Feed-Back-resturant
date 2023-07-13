@@ -5,6 +5,8 @@ import Home from "./componenets/Home";
 import Faq from "./componenets/FAQ";
 import About from "./componenets/About";
 import Contact from "./componenets/Contact";
+import WriteReviews from "./componenets/WriteReviews";
+import Favourite from "./componenets/Favourite";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/Faq" element={<Faq />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/WriteReviews" element={<WriteReviews />} />
+          <Route path="/Favourite" element={<Favourite />} />
         </Routes>
       </Router>
     </div>

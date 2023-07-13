@@ -8,6 +8,8 @@ import menu5 from "../images/menu-5.png";
 import menu6 from "../images/menu-6.png";
 import menu7 from "../images/menu-7.png";
 import menu8 from "../images/menu-8.png";
+import heart_1 from "../images/heart1.png";
+import heart_2 from "../images/heart2.png";
 
 function RecentlyAdded() {
   const [ratings, setRatings] = useState({
@@ -21,10 +23,28 @@ function RecentlyAdded() {
     menu8: 4.7,
   });
 
+  const [likedProducts, setLikedProducts] = useState({
+    menu1: false,
+    menu2: false,
+    menu3: false,
+    menu4: false,
+    menu5: false,
+    menu6: false,
+    menu7: false,
+    menu8: false,
+  });
+
   const handleRatingChange = (menuId, rating) => {
-    setRatings((prevRatings) => ({
+    setRatings(prevRatings => ({
       ...prevRatings,
       [menuId]: rating,
+    }));
+  };
+
+  const handleFavoriteChange = menuId => {
+    setLikedProducts(prevLikedProducts => ({
+      ...prevLikedProducts,
+      [menuId]: !prevLikedProducts[menuId],
     }));
   };
 
@@ -45,10 +65,25 @@ function RecentlyAdded() {
                 {ratings.menu1}
                 <StarRating
                   rating={ratings.menu1}
-                  onChange={(rating) => handleRatingChange("menu1", rating)}
+                  onChange={rating => handleRatingChange("menu1", rating)}
                 />
               </div>
             </div>
+            <span className="favourite_product_heart">
+              {likedProducts.menu1 ? (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_2}
+                  onClick={() => handleFavoriteChange("menu1")}
+                />
+              ) : (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_1}
+                  onClick={() => handleFavoriteChange("menu1")}
+                />
+              )}
+            </span>
           </div>
         </div>
         <div className="section_container">
@@ -61,28 +96,60 @@ function RecentlyAdded() {
                 {ratings.menu2}
                 <StarRating
                   rating={ratings.menu2}
-                  onChange={(rating) => handleRatingChange("menu2", rating)}
+                  onChange={rating => handleRatingChange("menu2", rating)}
                 />
               </div>
             </div>
+            <span className="favourite_product_heart">
+              {likedProducts.menu2 ? (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_2}
+                  onClick={() => handleFavoriteChange("menu2")}
+                />
+              ) : (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_1}
+                  onClick={() => handleFavoriteChange("menu2")}
+                />
+              )}
+            </span>
           </div>
         </div>
+
         <div className="section_container">
           <div className="img_text_">
-            <img className="product_img" src={menu3} alt="product image" />
-            <p className="product_title">Sald Salmon</p>
+            <img className="product_img" src={menu2} alt="product image" />
+            <p className="product_title">Avocado Tuna</p>
             <div className="rate_price_div">
-              <div className="price">$11.00</div>
+              <div className="price">$12.40</div>
               <div className="rating">
-                {ratings.menu3}
+                {ratings.menu2}
                 <StarRating
-                  rating={ratings.menu3}
-                  onChange={(rating) => handleRatingChange("menu3", rating)}
+                  rating={ratings.menu2}
+                  onChange={rating => handleRatingChange("menu2", rating)}
                 />
               </div>
             </div>
+            <span className="favourite_product_heart">
+              {likedProducts.menu3 ? (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_2}
+                  onClick={() => handleFavoriteChange("menu3")}
+                />
+              ) : (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_1}
+                  onClick={() => handleFavoriteChange("menu3")}
+                />
+              )}
+            </span>
           </div>
         </div>
+
         <div className="section_container">
           <div className="img_text_">
             <img className="product_img" src={menu4} alt="product image" />
@@ -93,10 +160,25 @@ function RecentlyAdded() {
                 {ratings.menu4}
                 <StarRating
                   rating={ratings.menu4}
-                  onChange={(rating) => handleRatingChange("menu4", rating)}
+                  onChange={rating => handleRatingChange("menu4", rating)}
                 />
               </div>
             </div>
+            <span className="favourite_product_heart">
+              {likedProducts.menu4 ? (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_2}
+                  onClick={() => handleFavoriteChange("menu4")}
+                />
+              ) : (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_1}
+                  onClick={() => handleFavoriteChange("menu4")}
+                />
+              )}
+            </span>
           </div>
         </div>
         <div className="section_container">
@@ -109,10 +191,25 @@ function RecentlyAdded() {
                 {ratings.menu5}
                 <StarRating
                   rating={ratings.menu5}
-                  onChange={(rating) => handleRatingChange("menu5", rating)}
+                  onChange={rating => handleRatingChange("menu5", rating)}
                 />
               </div>
             </div>
+            <span className="favourite_product_heart">
+              {likedProducts.menu5 ? (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_2}
+                  onClick={() => handleFavoriteChange("menu5")}
+                />
+              ) : (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_1}
+                  onClick={() => handleFavoriteChange("menu5")}
+                />
+              )}
+            </span>
           </div>
         </div>
         <div className="section_container">
@@ -125,10 +222,25 @@ function RecentlyAdded() {
                 {ratings.menu6}
                 <StarRating
                   rating={ratings.menu6}
-                  onChange={(rating) => handleRatingChange("menu6", rating)}
+                  onChange={rating => handleRatingChange("menu6", rating)}
                 />
               </div>
             </div>
+            <span className="favourite_product_heart">
+              {likedProducts.menu6 ? (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_2}
+                  onClick={() => handleFavoriteChange("menu6")}
+                />
+              ) : (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_1}
+                  onClick={() => handleFavoriteChange("menu6")}
+                />
+              )}
+            </span>
           </div>
         </div>
         <div className="section_container">
@@ -141,10 +253,25 @@ function RecentlyAdded() {
                 {ratings.menu7}
                 <StarRating
                   rating={ratings.menu7}
-                  onChange={(rating) => handleRatingChange("menu7", rating)}
+                  onChange={rating => handleRatingChange("menu7", rating)}
                 />
               </div>
             </div>
+            <span className="favourite_product_heart">
+              {likedProducts.menu7 ? (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_2}
+                  onClick={() => handleFavoriteChange("menu7")}
+                />
+              ) : (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_1}
+                  onClick={() => handleFavoriteChange("menu7")}
+                />
+              )}
+            </span>
           </div>
         </div>
         <div className="section_container">
@@ -157,10 +284,25 @@ function RecentlyAdded() {
                 {ratings.menu8}
                 <StarRating
                   rating={ratings.menu8}
-                  onChange={(rating) => handleRatingChange("menu8", rating)}
+                  onChange={rating => handleRatingChange("menu8", rating)}
                 />
               </div>
             </div>
+            <span className="favourite_product_heart">
+              {likedProducts.menu8 ? (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_2}
+                  onClick={() => handleFavoriteChange("menu8")}
+                />
+              ) : (
+                <img
+                  className="favourite_product_heart"
+                  src={heart_1}
+                  onClick={() => handleFavoriteChange("menu8")}
+                />
+              )}
+            </span>
           </div>
         </div>
       </div>

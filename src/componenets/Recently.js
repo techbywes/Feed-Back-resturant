@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaHeart } from 'react-icons/fa';
 import StarRating from "./Star_rating";
 import menu1 from "../images/menu-1.png";
 import menu2 from "../images/menu-2.png";

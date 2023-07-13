@@ -15,6 +15,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -269,6 +270,10 @@ a.active {
   padding-top: 6rem;
   background-color: #a1b225;
 }
+
+.favourite_product_heart{
+  width: 1.5rem;
+}
 .ourbest_meal_title_text {
   text-align: center;
   font-weight: 800;
@@ -328,7 +333,7 @@ a.active {
 .section_container:hover {
   border-top-left-radius: 6rem;
   border-top-right-radius: 6rem;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 
   background: #bfa006;
   backdrop-filter: blur(10px);
@@ -351,13 +356,15 @@ a.active {
 
 /* BEST TEXT STYLING STARTS FROM HERE */
 .besttext_div {
-  background-color: #73a605;
+  background-color: #a0a603;
   padding: 12rem;
   display: flex;
   flex-wrap: pre-wrap;
   justify-content: center;
   align-items: center;
   gap: 8rem;
+  width: 100%;
+  max-height: 40rem;
 }
 
 .right_title {
@@ -907,7 +914,7 @@ body.no-scroll {
   padding: 6rem;
   background-color: #010101;
   width: 50%;
-  height: 95%;
+  height: 100%;
   margin: 0 auto;
   border-radius: 0.6rem;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4), 0 2px 30px rgba(0, 0, 0, 0.2),
@@ -1003,7 +1010,7 @@ body.no-scroll {
 /* FAQ STYLING STARTS FROM HERE */
 .faq_div {
   padding: 8rem;
-  background-color: #ffffff;
+  background-color: #a1b225;
 }
 
 .accordion {
@@ -1014,23 +1021,26 @@ body.no-scroll {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  color: black;
 }
 
 .faq_p_text {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
+  color: blacl;
 }
 
 .faq_para_text_2 {
-  color: #a0a603;
+  color: black;
   font-size: 1.5rem;
   margin-bottom: 3rem;
 }
 
 .for_resturant {
-  color: #a0a603;
-  font-size: 1.5rem;
+  color: black;
+  font-size: 1.2rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
+  font-weight: 600;
 }
 
 .question-circle {
@@ -1046,10 +1056,12 @@ body.no-scroll {
   align-items: center;
   margin: 0 auto;
   border-radius: 0.6rem;
-  background-color: #a0a603;
+  background-color: black;
   width: 100%;
   height: 100%;
   margin-bottom: 4rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .phone_op_icons {
@@ -1061,7 +1073,9 @@ body.no-scroll {
 
 .download_para_text {
   font-size: 1.5rem;
-  color: black;
+  color: white;
+  width: 100%;
+  margin-right: -8rem;
 }
 /* DOWNLOAD APP STYLING ENDS FROM HERE */
 
@@ -1160,7 +1174,6 @@ body.no-scroll {
   width: 6rem;
   border-top: 4px solid #3f8c07;
 }
-
 
 .location_btn_ {
   padding: 0.8rem 1rem;
@@ -1271,14 +1284,16 @@ body.no-scroll {
 }
 /* ABOUT US PAGE STYLING ENDS FROM HERE */
 
-
 /* CONTACT PAGE STYLING STARTS FROM HERE */
-.contact_div{
+
+.general_section_div {
+  margin-top: 6rem;
+}
+.contact_div {
   padding: 8rem;
   padding-top: 12rem;
   background-color: #a0a603;
 }
-
 
 .need_help_div_2 {
   display: flex;
@@ -1288,4 +1303,128 @@ body.no-scroll {
   width: 100%;
   height: 100%;
 }
+
+.get_intouch_para_text__2 {
+  margin-bottom: 2rem;
+}
+
+.get_intouh_title__ {
+  font-weight: 800;
+  color: black;
+}
+
+.left_get_intou_div {
+  width: 40%;
+}
+
+.right_form_get_div {
+  width: 50%;
+}
+
+.map_icon___ {
+  width: 2rem;
+}
+
+.adress__num_mail_div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.adress__office {
+  font-size: 1.5rem;
+}
+
+.office_adress__ {
+  display: flex;
+  gap: 1rem;
+}
+
+.adress__office {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: black;
+  font-size: 1rem;
+}
+
+.office__adres__tesxt {
+  font-size: 0.9rem;
+}
+
+.right_form_get_div {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: black;
+  box-shadow: 2px 2px 6px rgba(75, 70, 70, 0.9);
+  margin: 2rem 0;
+}
+
+.get_intouch_form_div {
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+label {
+  color: #c4c5c6 !important;
+}
+
 /* CONTACTS PAGE STYLING ENDS FROM HERE */
+
+/* FAVOURITE PAGE STYLING STARTS FROM HERE */
+.favourite_div__ {
+  background-color: #a0a603;
+  width: 100%;
+  height: 100%;
+  padding: 10rem;
+}
+
+.no_favorites_text {
+  text-align: center !important;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.explain_favourite_text_div {
+  width: 100%;
+}
+
+.explain_favourite_text_ {
+  font-size: 1.1rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.explain_favourite_text_2 {
+  font-size: 1.2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  color: black;
+}
+
+.animated_heart__div {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.link__change_color {
+  color: blue;
+  text-decoration: underline;
+  transition: all 0.4s ease-in-out;
+}
+
+.link__change_color:hover {
+  color: white;
+}
+/* FAVORITE PAGE STYLING ENDS FROM HERE */

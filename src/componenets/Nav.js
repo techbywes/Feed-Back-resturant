@@ -17,6 +17,13 @@ function Nav() {
     navigate("/Contact", { replace: true });
   };
 
+  const GoToReviews = () => {
+    navigate("/WriteReviews", { replace: true });
+  };
+
+  const GoToFavourite = () => {
+    navigate("/Favourite", { replace: true });
+  };
   return (
     <nav>
       <div className="logo_div" onClick={GoHome}>
@@ -33,21 +40,26 @@ function Nav() {
         </li>
 
         <li>
-          <a href="#"   onClick={ShowAbout}>
+          <a href="" onClick={ShowAbout}>
             About
           </a>
         </li>
 
         <li>
-          <a href="#" onClick={GoToContct}>
+          <a href="" onClick={GoToContct}>
             Contact
           </a>
         </li>
+
         <li>
-          <a href="#">Favourites</a>
+          <a href="" onClick={GoToReviews}>
+            Write Review
+          </a>
         </li>
         <li>
-          <a href="#">Write Review</a>
+          <a href="" onClick={GoToFavourite}>
+            My Favourites
+          </a>
         </li>
 
         <button className="go_prmium_btn">Go premium</button>
