@@ -271,7 +271,7 @@ a.active {
   background-color: #a1b225;
 }
 
-.favourite_product_heart{
+.favourite_product_heart {
   width: 1.5rem;
 }
 .ourbest_meal_title_text {
@@ -1377,12 +1377,11 @@ label {
   background-color: #a0a603;
   width: 100%;
   height: 100%;
-  padding: 10rem;
+  padding: 6rem;
 }
 
 .no_favorites_text {
   text-align: center !important;
-  margin-top: 4rem;
   margin-bottom: 2rem;
   color: black;
 }
@@ -1428,3 +1427,96 @@ label {
   color: white;
 }
 /* FAVORITE PAGE STYLING ENDS FROM HERE */
+
+/* GO PREMIUME STYLING STARTS FROM HERE */
+.Gopremium__ {
+  background-color: #a0a603;
+  padding: 8rem;
+  width: 100%;
+  height: 100%;
+}
+/* GO PREMIUME STYLING ENDS FROM HERE */
+
+/* WRITE REVIEW STYLING STARTS FROM HERE */
+.write_reviews_div {
+  padding: 6rem;
+  width: 100%;
+  height: 100%;
+  background-color: #a0a603;
+}
+
+.reviews_div {
+  background-color: #0E1F02;
+  border-radius: 0.6rem;
+  max-width: 50rem;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  padding: 3rem;
+  padding-bottom: 4rem;
+  box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 6rem;
+}
+
+.starIcons2 {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.keep_in_mind__text {
+  color: white;
+}
+
+.facts_to_keep_ {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tings_too_ {
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  color: white;
+  background-color: #3f8c07;
+  margin-bottom: 2rem;
+}
+textarea {
+  resize: none;
+  overflow: hidden;
+  resize: none;
+  height: auto;
+}
+.form-control {
+  color: white !important;
+}
+
+._submit_review_btn {
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #3f8c07;
+  color: whitesmoke;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+  margin-top: 2rem;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+._submit_review_btn:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+
+.form-control:focus ~ .form-notch div {
+  border-color: rgb(255, 255, 255) !important;
+}
+
+.form-control:focus ~ .form-label {
+  color: white !important;
+}
+/* WRITE REVIEW STYLING ENDS FROM HERE */

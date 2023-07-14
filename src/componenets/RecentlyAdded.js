@@ -10,8 +10,11 @@ import menu7 from "../images/menu-7.png";
 import menu8 from "../images/menu-8.png";
 import heart_1 from "../images/heart1.png";
 import heart_2 from "../images/heart2.png";
+import Favourite from "./Favourite";
 
 function RecentlyAdded() {
+
+  
   const [ratings, setRatings] = useState({
     menu1: 4.6,
     menu2: 4.8,
@@ -55,7 +58,7 @@ function RecentlyAdded() {
         All in good taste elementum integer enim neque volutpat ac.
       </p>
       <div className="general_menu_div">
-        <div className="section_container">
+        <div className="section_container" id="Menu-A">
           <div className="img_text_">
             <img className="product_img" src={menu1} alt="product image" />
             <p className="product_title">Shrimps Tomato</p>
@@ -86,7 +89,7 @@ function RecentlyAdded() {
             </span>
           </div>
         </div>
-        <div className="section_container">
+        <div className="section_container" id="Menu-B">
           <div className="img_text_">
             <img className="product_img" src={menu2} alt="product image" />
             <p className="product_title">Avocado Tuna</p>
@@ -118,7 +121,7 @@ function RecentlyAdded() {
           </div>
         </div>
 
-        <div className="section_container">
+        <div className="section_container" id="Menu-C">
           <div className="img_text_">
             <img className="product_img" src={menu2} alt="product image" />
             <p className="product_title">Avocado Tuna</p>
@@ -150,7 +153,7 @@ function RecentlyAdded() {
           </div>
         </div>
 
-        <div className="section_container">
+        <div className="section_container" id="Menu-D">
           <div className="img_text_">
             <img className="product_img" src={menu4} alt="product image" />
             <p className="product_title">Barley Porridge</p>
@@ -181,7 +184,7 @@ function RecentlyAdded() {
             </span>
           </div>
         </div>
-        <div className="section_container">
+        <div className="section_container" id="Menu-E">
           <div className="img_text_">
             <img className="product_img" src={menu5} alt="product image" />
             <p className="product_title">Shrimps Tomato</p>
@@ -212,7 +215,7 @@ function RecentlyAdded() {
             </span>
           </div>
         </div>
-        <div className="section_container">
+        <div className="section_container" id="Menu-F">
           <div className="img_text_">
             <img className="product_img" src={menu6} alt="product image" />
             <p className="product_title">Avocado Tuna</p>
@@ -243,7 +246,7 @@ function RecentlyAdded() {
             </span>
           </div>
         </div>
-        <div className="section_container">
+        <div className="section_container" id="Menu-G">
           <div className="img_text_">
             <img className="product_img" src={menu7} alt="product image" />
             <p className="product_title">Sald Salmon</p>
@@ -274,7 +277,7 @@ function RecentlyAdded() {
             </span>
           </div>
         </div>
-        <div className="section_container">
+        <div className="section_container" id="Menu-H">
           <div className="img_text_">
             <img className="product_img" src={menu8} alt="product image" />
             <p className="product_title">Barley Porridge</p>

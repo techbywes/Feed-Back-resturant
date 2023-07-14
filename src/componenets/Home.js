@@ -1,9 +1,9 @@
 import React from "react";
 import Nav from "./Nav";
 import HeroSection from "./HeroSection";
-import RecentlyAdded from "./Ourbestmeal";
+import RecentlyAdded from "./RecentlyAdded";
 import Bestoftheday from "./Bestoftheday";
-import Ourbestmeal from "./Ourbestmeal";
+import Ourbestmeal from "./RecentlyAdded";
 import Besttest from "./Besttest";
 import TestimonialCarousel from "./Testimonial";
 

@@ -24,6 +24,11 @@ function Nav() {
   const GoToFavourite = () => {
     navigate("/Favourite", { replace: true });
   };
+
+
+  const GoPremiume = () => {
+    navigate("/PremiumPage", { replace: true});
+  };
   return (
     <nav>
       <div className="logo_div" onClick={GoHome}>
@@ -62,7 +67,7 @@ function Nav() {
           </a>
         </li>
 
-        <button className="go_prmium_btn">Go premium</button>
+        <button className="go_prmium_btn" onClick={GoPremiume}>Go premium</button>
         <li>
           <Profile />
         </li>
