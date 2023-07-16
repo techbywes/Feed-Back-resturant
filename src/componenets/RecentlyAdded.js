@@ -10,11 +10,9 @@ import menu7 from "../images/menu-7.png";
 import menu8 from "../images/menu-8.png";
 import heart_1 from "../images/heart1.png";
 import heart_2 from "../images/heart2.png";
-import Favourite from "./Favourite";
+import Favourites from "./Favourite";
 
 function RecentlyAdded() {
-
-  
   const [ratings, setRatings] = useState({
     menu1: 4.6,
     menu2: 4.8,
@@ -120,7 +118,6 @@ function RecentlyAdded() {
             </span>
           </div>
         </div>
-
         <div className="section_container" id="Menu-C">
           <div className="img_text_">
             <img className="product_img" src={menu2} alt="product image" />
@@ -130,8 +127,8 @@ function RecentlyAdded() {
               <div className="rating">
                 {ratings.menu2}
                 <StarRating
-                  rating={ratings.menu2}
-                  onChange={rating => handleRatingChange("menu2", rating)}
+                  rating={ratings.menu3}
+                  onChange={rating => handleRatingChange("menu3", rating)}
                 />
               </div>
             </div>
@@ -152,7 +149,6 @@ function RecentlyAdded() {
             </span>
           </div>
         </div>
-
         <div className="section_container" id="Menu-D">
           <div className="img_text_">
             <img className="product_img" src={menu4} alt="product image" />

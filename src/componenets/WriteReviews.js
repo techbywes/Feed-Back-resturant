@@ -16,7 +16,9 @@ function WriteReviews() {
   return (
     <>
       <Nav />
-      <div className="login-reg_div"></div>
+      <div className="login-reg_div">
+        a
+      </div>
 
       <div className="write_reviews_div">
         <div className="reviews_div">

@@ -8,6 +8,7 @@ import WriteReviews from "./componenets/WriteReviews";
 import Favourite from "./componenets/Favourite";
 import PremiumPage from "./componenets/PremiumPage";
 
+
 function App() {
   return (
     <div className="App">
@@ -21,7 +22,7 @@ function App() {
           <Route path="/Favourite" element={<Favourite />} />
           <Route path="/PremiumPage" element={<PremiumPage />} />
         </Routes>
-      </Router>z
+      </Router>
     </div>
   );
 }
