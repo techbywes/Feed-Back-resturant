@@ -39,7 +39,10 @@ const Myproducts = ({ data }) => {
               <StarRating rating={rating} />
             </div>
           </div>
-          <span className="favourite_product_heart">
+          <span
+            className="favourite_product_heart"
+            onClick={() => addToFavorite(id)}
+          >
             {likedProducts.menu1 ? (
               <img
                 className="favourite_product_heart"

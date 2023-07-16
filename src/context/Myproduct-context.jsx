@@ -22,6 +22,7 @@ export const MyproductContextProvider = props => {
   };
 
   const contextValue = { FavoriteItems, addToFavorite, removeFromFavorite };
+  
   console.log(FavoriteItems);
   return (
     <MyProductsContext.Provider value={contextValue}>
