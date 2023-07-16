@@ -278,12 +278,14 @@ a.active {
   text-align: center;
   font-weight: 800;
   font-size: 2rem;
+  color: white;
 }
 
 .bestmeal_para_text {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 6rem;
+  color: white;
 }
 
 .product_img {
@@ -468,6 +470,7 @@ a.active {
 
 .text_title {
   text-align: center;
+  color: white;
 }
 
 .test_subtitle {
@@ -475,6 +478,7 @@ a.active {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 3rem;
+  color: white;
 }
 .test_general_div {
   padding: 6rem;
@@ -529,6 +533,7 @@ a.active {
 .text_parapgraph {
   font-size: 1rem;
   margin-bottom: 0.8rem;
+  color: white;
 }
 
 .test_name {
@@ -1446,7 +1451,7 @@ label {
 }
 
 .reviews_div {
-  background-color: #0E1F02;
+  background-color: #0e1f02;
   border-radius: 0.6rem;
   max-width: 50rem;
   height: 100%;
@@ -1511,7 +1516,6 @@ textarea {
   color: black;
 }
 
-
 .form-control:focus ~ .form-notch div {
   border-color: rgb(255, 255, 255) !important;
 }
@@ -1519,4 +1523,3 @@ textarea {
 .form-control:focus ~ .form-label {
   color: white !important;
 }
-/* WRITE REVIEW STYLING ENDS FROM HERE */

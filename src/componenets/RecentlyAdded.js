@@ -10,11 +10,11 @@ import menu7 from "../images/menu-7.png";
 import menu8 from "../images/menu-8.png";
 import heart_1 from "../images/heart1.png";
 import heart_2 from "../images/heart2.png";
-import Favourites from "./Favourite";
+
 
 function RecentlyAdded() {
   const [ratings, setRatings] = useState({
-    menu1: 4.6,
+    menu1: 4.7,
     menu2: 4.8,
     menu3: 4.4,
     menu4: 4.7,
@@ -23,6 +23,13 @@ function RecentlyAdded() {
     menu7: 4.4,
     menu8: 4.7,
   });
+
+  const handleRatingChange = (menuId, rating) => {
+    setRatings(prevRatings => ({
+      ...prevRatings,
+      [menuId]: rating,
+    }));
+  };
 
   const [likedProducts, setLikedProducts] = useState({
     menu1: false,
@@ -34,13 +41,6 @@ function RecentlyAdded() {
     menu7: false,
     menu8: false,
   });
-
-  const handleRatingChange = (menuId, rating) => {
-    setRatings(prevRatings => ({
-      ...prevRatings,
-      [menuId]: rating,
-    }));
-  };
 
   const handleFavoriteChange = menuId => {
     setLikedProducts(prevLikedProducts => ({
@@ -56,10 +56,12 @@ function RecentlyAdded() {
         All in good taste elementum integer enim neque volutpat ac.
       </p>
       <div className="general_menu_div">
+     
         <div className="section_container" id="Menu-A">
           <div className="img_text_">
             <img className="product_img" src={menu1} alt="product image" />
             <p className="product_title">Shrimps Tomato</p>
+
             <div className="rate_price_div">
               <div className="price">$18.30</div>
               <div className="rating">
@@ -90,9 +92,9 @@ function RecentlyAdded() {
         <div className="section_container" id="Menu-B">
           <div className="img_text_">
             <img className="product_img" src={menu2} alt="product image" />
-            <p className="product_title">Avocado Tuna</p>
+            <p className="product_title">Gvocado Tuna</p>
             <div className="rate_price_div">
-              <div className="price">$12.40</div>
+              <div className="price">$12.50</div>
               <div className="rating">
                 {ratings.menu2}
                 <StarRating
@@ -120,7 +122,7 @@ function RecentlyAdded() {
         </div>
         <div className="section_container" id="Menu-C">
           <div className="img_text_">
-            <img className="product_img" src={menu2} alt="product image" />
+            <img className="product_img" src={menu3} alt="product image" />
             <p className="product_title">Avocado Tuna</p>
             <div className="rate_price_div">
               <div className="price">$12.40</div>
