@@ -1,6 +1,8 @@
 import React from "react";
 import { PRODUCTS } from "./Products";
-import { Myproducts } from "./Myproducts";
+import Myproducts from "./Myproducts";
+
+
 
 export const Recently = () => {
   return (

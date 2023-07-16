@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-
+import React, { useContext, useState } from "react";
 import heart_1 from "../images/heart1.png";
 import heart_2 from "../images/heart2.png";
+import StarRating from "./Star_rating";
+import { MyProductsContext } from "../context/Myproduct-context";
 
-import StarRating from "../componenets/Star_rating";
-
-export const Myproducts = props => {
+const Myproducts = ({ data }) => {
   const [likedProducts, setLikedProducts] = useState({
     menu1: false,
     menu2: false,
@@ -24,7 +23,9 @@ export const Myproducts = props => {
     }));
   };
 
-  const { data: { id, productName, price, productImage, rating } = {} } = props;
+  const { id, productName, price, productImage, rating } = data;
+  const { addToFavorite } = useContext(MyProductsContext);
+
   return (
     <div>
       <div className="section_container">
@@ -58,3 +59,5 @@ export const Myproducts = props => {
     </div>
   );
 };
+
+export default Myproducts;
