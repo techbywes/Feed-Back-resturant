@@ -13,11 +13,13 @@ function Favourite() {
 
   return (
     <div className="favourite_div__">
-      <div className="ur_fav_items">Your Favorite Menu</div>
       <div className="general_menu_div">
         {PRODUCTS.map(product => {
           if (FavoriteItems[product.id] >= 1) {
             return <MyFavouriteItems data={product} />;
+            <div className="ur_fav_items">
+              <p>Your Favorite Menu</p>
+            </div>;
           }
           return null; // Return null for products that are not favorites
         })}

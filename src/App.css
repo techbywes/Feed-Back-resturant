@@ -1393,8 +1393,7 @@ label {
   padding-top: 14rem;
 }
 
-
-.ur_fav_items{
+.ur_fav_items {
   text-align: center;
   font-weight: 800;
   color: white;
@@ -1416,14 +1415,14 @@ label {
   max-width: 40rem;
   margin: 0 auto;
   margin-bottom: 2rem;
-  color: black;
+  color: white;
 }
 
 .explain_favourite_text_2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   max-width: 40rem;
   margin: 0 auto;
-  color: black;
+  color: white;
 }
 
 .animated_heart__div {
@@ -1439,7 +1438,8 @@ label {
 }
 
 .link__change_color {
-  color: blue;
+  font-size: 1rem;
+  color: black;
   text-decoration: underline;
   transition: all 0.4s ease-in-out;
 }

@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import heart_1 from "../images/heart1.png";
 import heart_2 from "../images/heart2.png";
+import { MyProductsContext } from "../context/Myproduct-context";
 import StarRating from "./Star_rating";
 
 export const MyFavouriteItems = props => {
   const { id, productName, price, productImage, rating } = props.data;
+  const { removeFromFavorite } = useContext(MyProductsContext);
+
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  const handleFavoriteClick = () => {
+    setIsFavorite(!isFavorite);
+    removeFromFavorite(id);
+  };
+
 
   return (
     <div>
@@ -21,9 +31,12 @@ export const MyFavouriteItems = props => {
           </div>
 
           <span className="favourite_product_heart">
-            {/* <img className="favourite_product_heart" src={heart_2} /> */}
-
-            <img className="favourite_product_heart" src={heart_2} />
+          <img
+              className="favourite_product_heart"
+              src={heart_2}
+              alt="Favorite"
+              onClick={handleFavoriteClick}
+            />
           </span>
         </div>
       </div>
