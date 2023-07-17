@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import heart_1 from "../images/heart1.png";
 import heart_2 from "../images/heart2.png";
 import StarRating from "./Star_rating";
-import { MyProductsContext } from "../context/Myproduct-context";
 
-const Myproducts = props => {
+export const MyFavouriteItems = props => {
   const { id, productName, price, productImage, rating } = props.data;
-  const { addToFavorite } = useContext(MyProductsContext);
 
   return (
     <div>
@@ -25,16 +23,10 @@ const Myproducts = props => {
           <span className="favourite_product_heart">
             {/* <img className="favourite_product_heart" src={heart_2} /> */}
 
-            <img
-              className="favourite_product_heart"
-              src={heart_1}
-              onClick={() => addToFavorite(id)}
-            />
+            <img className="favourite_product_heart" src={heart_2} />
           </span>
         </div>
       </div>
     </div>
   );
 };
-
-export default Myproducts;

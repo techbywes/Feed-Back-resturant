@@ -2,8 +2,6 @@ import React from "react";
 import { PRODUCTS } from "./Products";
 import Myproducts from "./Myproducts";
 
-
-
 export const Recently = () => {
   return (
     <section className="ourbestmeal_div RecentlyAdded">
@@ -14,7 +12,7 @@ export const Recently = () => {
 
       <div className="general_menu_div">
         {PRODUCTS.map(product => (
-          <Myproducts data={product} />
+          <Myproducts key={product.id}  data={product} />
         ))}
       </div>
     </section>

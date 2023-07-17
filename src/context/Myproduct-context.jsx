@@ -1,29 +1,41 @@
-import React, { createContext, useState } from "react";
-import { PRODUCTS } from "../componenets/Products";
+import React, { createContext, useEffect, useState } from "react";
+
+
 export const MyProductsContext = createContext(null);
 
 const getFavoriteItems = () => {
-  let Favourite = {};
-  for (let i = 1; i < PRODUCTS.length + 1; i++) {
-    Favourite[i] = 0;
-  }
-  return Favourite;
+  const storedItems = localStorage.getItem("favoriteItems");
+  return storedItems ? JSON.parse(storedItems) : {};
 };
 
-export const MyproductContextProvider = props => {
-  const [FavoriteItems, setFavoriteItems] = useState(getFavoriteItems());
+export const MyproductContextProvider = (props) => {
+  const [favoriteItems, setFavoriteItems] = useState(getFavoriteItems());
 
-  const addToFavorite = itemId => {
-    setFavoriteItems(prev => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+  useEffect(() => {
+    localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems));
+  }, [favoriteItems]);
+
+  const addToFavorite = (itemId) => {
+    setFavoriteItems((prev) => ({
+      ...prev,
+      [itemId]: prev[itemId] ? prev[itemId] + 1 : 1,
+    }));
   };
 
-  const removeFromFavorite = itemId => {
-    setFavoriteItems(prev => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  const removeFromFavorite = (itemId) => {
+    setFavoriteItems((prev) => {
+      const updatedItems = { ...prev };
+      delete updatedItems[itemId];
+      return updatedItems;
+    });
   };
 
-  const contextValue = { FavoriteItems, addToFavorite, removeFromFavorite };
-  
-  console.log(FavoriteItems);
+  const contextValue = {
+    FavoriteItems: favoriteItems,
+    addToFavorite,
+    removeFromFavorite,
+  };
+
   return (
     <MyProductsContext.Provider value={contextValue}>
       {props.children}
