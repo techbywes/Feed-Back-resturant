@@ -15,7 +15,6 @@ export const MyFavouriteItems = props => {
     removeFromFavorite(id);
   };
 
-
   return (
     <div>
       <div className="section_container">
@@ -31,7 +30,7 @@ export const MyFavouriteItems = props => {
           </div>
 
           <span className="favourite_product_heart">
-          <img
+            <img
               className="favourite_product_heart"
               src={heart_2}
               alt="Favorite"

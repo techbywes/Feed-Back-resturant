@@ -1390,7 +1390,7 @@ label {
   width: 100%;
   height: 100%;
   padding: 6rem;
-  padding-top: 14rem;
+  padding-top: 10rem;
 }
 
 .ur_fav_items {
@@ -1403,7 +1403,8 @@ label {
 .no_favorites_text {
   text-align: center !important;
   margin-bottom: 2rem;
-  color: black;
+  color: white;
+  font-weight: 800;
 }
 
 .explain_favourite_text_div {

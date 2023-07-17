@@ -1,6 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
 
-
 export const MyProductsContext = createContext(null);
 
 const getFavoriteItems = () => {
@@ -8,22 +7,22 @@ const getFavoriteItems = () => {
   return storedItems ? JSON.parse(storedItems) : {};
 };
 
-export const MyproductContextProvider = (props) => {
+export const MyproductContextProvider = props => {
   const [favoriteItems, setFavoriteItems] = useState(getFavoriteItems());
 
   useEffect(() => {
     localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems));
   }, [favoriteItems]);
 
-  const addToFavorite = (itemId) => {
-    setFavoriteItems((prev) => ({
+  const addToFavorite = itemId => {
+    setFavoriteItems(prev => ({
       ...prev,
       [itemId]: prev[itemId] ? prev[itemId] + 1 : 1,
     }));
   };
 
-  const removeFromFavorite = (itemId) => {
-    setFavoriteItems((prev) => {
+  const removeFromFavorite = itemId => {
+    setFavoriteItems(prev => {
       const updatedItems = { ...prev };
       delete updatedItems[itemId];
       return updatedItems;
