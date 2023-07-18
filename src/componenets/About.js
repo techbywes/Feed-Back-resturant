@@ -1,9 +1,7 @@
 import React from "react";
-import Nav from "./Nav";
 import bugaIMG from "../images/bugger.png";
 import signature from "../images/signature.png";
 import bugger2 from "../images/bugger2.png";
-import Footer from "./Footer";
 import phone from "../images/phone2.png";
 import resturant from "../images/restaurant.png";
 import map from "../images/map2.png";
@@ -13,7 +11,6 @@ import web from "../images/web.png";
 function About() {
   return (
     <>
-      <Nav />
       <div className="about_us_div">
         <div className="left_img_righttext_div">
           <div className="r_image_div">
@@ -179,7 +176,6 @@ function About() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }

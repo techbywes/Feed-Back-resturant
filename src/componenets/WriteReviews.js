@@ -1,9 +1,9 @@
-import Nav from "./Nav";
-import Footer from "./Footer";
 import StarRating2 from "./StarsWithtext";
-import TestimonialCarousel from "./Testimonial";
+import TestimonialCarouse2 from "./Testimonial_second";
 import React, { useState } from "react";
 import { MDBTextArea } from "mdb-react-ui-kit";
+import Search from "../componenets/Search";
+import Customer_review from "../images/customer-review.png";
 
 function WriteReviews() {
   const [text, setText] = useState("");
@@ -15,12 +15,23 @@ function WriteReviews() {
   };
   return (
     <>
-      <Nav />
-      <div className="login-reg_div">
-        a
-      </div>
-
+      <div className="login-reg_div">a</div>
       <div className="write_reviews_div">
+        <div className="find_resturent_reviw_icon_div">
+          <div className="text_reveiw_writing">
+            <h2 className="find_biz_text">Find a resturant to review</h2>
+            <p className="writw_rev_text__">
+              Review anything from your favorite food spot to your local
+              resturant.
+            </p>
+          </div>
+          <div className="write_review_icon__">
+            <img className="rewviews_icon_img_" src={Customer_review} alt="reviews icon" />
+          </div>
+        </div>
+
+        <Search />
+        <TestimonialCarouse2 />
         <div className="reviews_div">
           <StarRating2 />
           <p className="keep_in_mind__text">
@@ -40,9 +51,7 @@ function WriteReviews() {
           />
           <button className="_submit_review_btn"> Submit Review</button>
         </div>
-        <TestimonialCarousel />
       </div>
-      <Footer />
     </>
   );
 }

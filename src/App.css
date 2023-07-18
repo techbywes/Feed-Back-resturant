@@ -99,9 +99,13 @@ a.active {
   text-shadow: rgba(0, 0, 0, 0.708);
   cursor: pointer;
   margin-right: 10rem;
+  font-weight: 600;
 }
 .food_text {
   color: #a0a603;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-shadow: rgba(0, 0, 0, 0.708);
 }
 
 .go_prmium_btn {
@@ -158,6 +162,7 @@ a.active {
 }
 .paragraph_text {
   margin-bottom: 1.4rem;
+  color: white;
 }
 .learnmore_btn {
   padding: 0.8rem 1rem;
@@ -231,6 +236,7 @@ a.active {
 .best_para_text {
   font-size: 1rem;
   margin-bottom: 2rem;
+  color: white;
 }
 .img_left {
   width: 8rem;
@@ -487,9 +493,12 @@ a.active {
   margin-bottom: 3rem;
   color: white;
 }
+
+.main_gen_div{
+  background-color: #a1b225;
+}
 .test_general_div {
   padding: 6rem;
-  background-color: #a1b225;
   width: 100%;
   height: 100%;
 }
@@ -547,16 +556,17 @@ a.active {
   text-align: center;
   margin-bottom: 0.2rem;
   transition: color 0.4s ease-in-out;
-  color: #424242;
+  color: white;
 }
 
 .test_name:hover {
-  color: white;
+  color: black;
 }
 
 .test_desgination {
   text-align: center;
   margin-bottom: 2rem;
+  color: white;
 }
 
 /* TESTIMONIAL SLIDER STYLING ENDS FROM HERE */
@@ -1033,22 +1043,23 @@ body.no-scroll {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: black;
+  color: white;
 }
 
 .faq_p_text {
   margin-bottom: 1.6rem;
-  color: blacl;
+  color: white;
 }
 
 .faq_para_text_2 {
-  color: black;
+  color: white;
   font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 3rem;
 }
 
 .for_resturant {
-  color: black;
+  color: white;
   font-size: 1.2rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
@@ -1098,6 +1109,7 @@ body.no-scroll {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
+  padding-top: 10rem;
 }
 
 .buga_img_ {
@@ -1114,12 +1126,24 @@ body.no-scroll {
 .abt_us {
   font-size: 1.5rem;
   font-weight: 800;
-  color: black;
+  color: white;
+}
+
+.abta-parapgraph_text,
+.abt_para_text_ {
+  color: white;
+}
+
+.expert_chef_text,
+.menu_food_count_,
+.order_delivered_ {
+  color: white;
+  font-weight: 400;
 }
 
 .right_text_ {
   font-size: 2.4rem;
-  color: black;
+  color: white;
   font-weight: 800;
 }
 
@@ -1147,8 +1171,12 @@ body.no-scroll {
 
 .good_food_text_ {
   font-size: 2.1rem;
-  color: black;
+  color: white;
   font-weight: 800;
+}
+
+.good_food_orar_text {
+  color: white;
 }
 
 .right_text_div {
@@ -1175,7 +1203,7 @@ body.no-scroll {
 }
 
 .author_name_ {
-  color: #3f8c07;
+  color: white;
   font-weight: 600;
   font-size: 1.4rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
@@ -1216,13 +1244,14 @@ body.no-scroll {
 
 .need_help_text {
   font-size: 1rem;
-  color: black;
+  color: white;
   font-weight: 600;
 }
 
 .call_resturant_ {
   font-size: 1rem;
   white-space: nowrap;
+  color: white;
 }
 
 .need_help_div_ {
@@ -1249,6 +1278,7 @@ body.no-scroll {
 
 .mail_text {
   margin-top: -1rem;
+  color: white;
 }
 
 .resturant_icon_ {
@@ -1260,11 +1290,20 @@ body.no-scroll {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+
+.fax_addres_text {
+  color: white;
+}
+
+.Adress_text__g {
+  color: white !important;
 }
 
 .dotted_line_div {
   margin-left: 2rem;
-  border-top: 2px dotted black;
+  border-top: 2px dotted white;
   margin: 1rem 0;
 }
 
@@ -1316,13 +1355,20 @@ body.no-scroll {
   height: 100%;
 }
 
-.get_intouch_para_text__2 {
+.get_intouch_para_text__2,
+.get_intouch_para_text__ {
   margin-bottom: 2rem;
+  color: white;
+}
+
+.adress__office,
+.adress__office {
+  color: white!;
 }
 
 .get_intouh_title__ {
   font-weight: 800;
-  color: black;
+  color: white;
 }
 
 .left_get_intou_div {
@@ -1359,8 +1405,10 @@ body.no-scroll {
   font-size: 1rem;
 }
 
-.office__adres__tesxt {
+.office__adres__tesxt,
+.adress__office {
   font-size: 0.9rem;
+  color: white;
 }
 
 .right_form_get_div {
@@ -1465,8 +1513,33 @@ label {
   width: 100%;
   height: 100%;
   background-color: #a0a603;
+  padding-top: 10rem;
 }
 
+.find_biz_text {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.writw_rev_text__ {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.rewviews_icon_img_ {
+  width: 20rem;
+  filter: drop-shadow(1px 1px 2px #1d1d1d9a);
+  margin-bottom: 1rem;
+}
+
+.find_resturent_reviw_icon_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .reviews_div {
   background-color: #0e1f02;
   border-radius: 0.6rem;

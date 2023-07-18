@@ -1,73 +1,59 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Profile from "../componenets/Profile";
 
 function Nav() {
-  const navigate = useNavigate();
+  const location = useLocation();
 
-  const ShowAbout = () => {
-    navigate("/About", { replace: true });
+  const isActiveLink = pathname => {
+    return location.pathname === pathname ? "active" : "";
   };
 
-  const GoHome = () => {
-    navigate("/", { replace: true });
-  };
-
-  const GoToContct = () => {
-    navigate("/Contact", { replace: true });
-  };
-
-  const GoToReviews = () => {
-    navigate("/WriteReviews", { replace: true });
-  };
-
-  const GoToFavourite = () => {
-    navigate("/Favourite", { replace: true });
-  };
-
-
-  const GoPremiume = () => {
-    navigate("/PremiumPage", { replace: true});
-  };
   return (
     <nav>
-      <div className="logo_div" onClick={GoHome}>
+      <div className="logo_div">
         <h1 className="logo_text">
-          <span className="food_text">FEED</span> BACK POST
+          <span className="food_text">FEED</span>BACK POST
         </h1>
       </div>
 
       <ul className="nav_ul">
         <li>
-          <a href="/" className="active">
+          <Link to="/" className={isActiveLink("/")}>
             Home
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a href="" onClick={ShowAbout}>
+          <Link to="/About" className={isActiveLink("/About")}>
             About
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a href="" onClick={GoToContct}>
+          <Link to="/Contact" className={isActiveLink("/Contact")}>
             Contact
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a href="" onClick={GoToReviews}>
+          <Link to="/WriteReviews" className={isActiveLink("/WriteReviews")}>
             Write Review
-          </a>
-        </li>
-        <li>
-          <a href="" onClick={GoToFavourite}>
-            My Favourites
-          </a>
+          </Link>
         </li>
 
-        <button className="go_prmium_btn" onClick={GoPremiume}>Go premium</button>
+        <li>
+          <Link to="/Favourite" className={isActiveLink("/Favourite")}>
+            My Favorites
+          </Link>
+        </li>
+
+        <button className="go_prmium_btn">
+          <Link to="/PremiumPage" className={isActiveLink("/PremiumPage")}>
+            Go premium
+          </Link>
+        </button>
+
         <li>
           <Profile />
         </li>

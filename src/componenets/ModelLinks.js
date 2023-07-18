@@ -6,7 +6,7 @@ import myfavourite from "../images/heart.png";
 import settings from "../images/setting.png";
 import faq from "../images/faq.png";
 import logout from "../images/power-off.png";
-
+import WriteReviews from "./WriteReviews";
 
 import close from "../images/close.png";
 import {
@@ -40,6 +40,10 @@ function ModelLinks() {
 
   const ShowFaq = () => {
     navigate("/Faq", { replace: true });
+  };
+
+  const ShowWriteReview = () => {
+    navigate("/WriteReviews", { replace: true });
   };
 
   return (
@@ -206,8 +210,17 @@ function ModelLinks() {
           <li className="model_li">
             <div className="img_icon_div">
               <img className="icon_img" src={myfavourite} />
-              <a className="new_model_a" href="#">
+              <a className="new_model_a" href="#" onClick={ShowWriteReview}>
                 My Favourite
+              </a>
+            </div>
+          </li>
+
+          <li className="model_li">
+            <div className="img_icon_div">
+              <img className="icon_img" src={faq} />
+              <a className="new_model_a" href="#" onClick={ShowFaq}>
+                FAQ
               </a>
             </div>
           </li>
@@ -216,14 +229,6 @@ function ModelLinks() {
               <img className="icon_img" src={settings} />
               <a className="new_model_a" href="#">
                 Settings
-              </a>
-            </div>
-          </li>
-          <li className="model_li">
-            <div className="img_icon_div">
-              <img className="icon_img" src={faq} />
-              <a className="new_model_a" href="#" onClick={ShowFaq}>
-                FAQ
               </a>
             </div>
           </li>

@@ -1,6 +1,4 @@
 import React from "react";
-import Nav from "./Nav";
-import Footer from "./Footer";
 
 import { MDBInput, MDBCheckbox, MDBBtn } from "mdb-react-ui-kit";
 
@@ -13,7 +11,6 @@ import web from "../images/web.png";
 function Contact() {
   return (
     <>
-      <Nav />
       <div className="contact_div">
         <section className="get_intouch_form_div">
           <div className="left_get_intou_div">
@@ -201,7 +198,6 @@ function Contact() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }
