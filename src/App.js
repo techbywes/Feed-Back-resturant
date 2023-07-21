@@ -7,6 +7,7 @@ import Contact from "./componenets/Contact";
 import WriteReviews from "./componenets/WriteReviews";
 import Favourite from "./componenets/Favourite";
 import PremiumPage from "./componenets/PremiumPage";
+import Resturants from "./componenets/Resturants";
 import { MyproductContextProvider } from "./context/Myproduct-context";
 import { Recently } from "./componenets/Recently";
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/Favourite" element={<Favourite />} />
             <Route path="/Recently" element={<Recently />} />
             <Route path="/PremiumPage" element={<PremiumPage />} />
+            <Route path="/Resturant" element={<Resturants />} />
           </Routes>
           <Footer />
         </Router>

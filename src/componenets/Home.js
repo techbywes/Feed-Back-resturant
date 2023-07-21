@@ -6,14 +6,16 @@ import TestimonialCarousel from "./Testimonial";
 import { Recently } from "./Recently";
 
 
+
+
 function Home() {
   return (
     <div className="Home_page_div_">
       <HeroSection />
       <Recently />
       <Bestoftheday />
-      <Besttest />
       <TestimonialCarousel />
+      <Besttest />
     </div>
   );
 }

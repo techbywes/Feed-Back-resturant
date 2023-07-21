@@ -343,8 +343,6 @@ a.active {
 .section_container:hover {
   border-top-left-radius: 6rem;
   border-top-right-radius: 6rem;
-  /* transform: scale(1.1); */
-
   background: #bfa006;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -372,14 +370,14 @@ a.active {
 /* BEST TEXT STYLING STARTS FROM HERE */
 .besttext_div {
   background-color: #a0a603;
-  padding: 12rem;
+  padding: 6rem;
   display: flex;
   flex-wrap: pre-wrap;
   justify-content: center;
   align-items: center;
   gap: 8rem;
   width: 100%;
-  max-height: 40rem;
+  max-height: 30rem;
 }
 
 .right_title {
@@ -494,7 +492,7 @@ a.active {
   color: white;
 }
 
-.main_gen_div{
+.main_gen_div {
   background-color: #a1b225;
 }
 .test_general_div {
@@ -1080,7 +1078,7 @@ body.no-scroll {
   margin: 0 auto;
   border-radius: 0.6rem;
   background-color: black;
-  width: 100%;
+  max-width: 100rem;
   height: 100%;
   margin-bottom: 4rem;
   flex-wrap: wrap;
@@ -1619,3 +1617,47 @@ textarea {
   display: flex;
   gap: 2rem !important;
 }
+
+/* RESTURANT PAGE STYLING STARTS FROM HERE */
+.resturnat_div {
+  background-color: #a0a603;
+  padding: 16rem 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.productz_img {
+  width: 20rem;
+}
+
+
+.product_img2{
+  width: 12rem ;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+.thundeer_rate{
+  width: 2rem;
+}
+
+.thunder_street_div{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.street__rest{
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.orderz_count__{
+  width: 12rem;
+  color: rgba(84, 84, 28, 0.748);
+}
+/* RESTURANT PAGE STYLING ENDS FROM HERE */

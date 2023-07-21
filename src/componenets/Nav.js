@@ -48,6 +48,11 @@ function Nav() {
           </Link>
         </li>
 
+        <li>
+          <Link to="/Resturant" className={isActiveLink("/Resturant")}>
+           Resturants
+          </Link>
+        </li>
         <button className="go_prmium_btn">
           <Link to="/PremiumPage" className={isActiveLink("/PremiumPage")}>
             Go premium

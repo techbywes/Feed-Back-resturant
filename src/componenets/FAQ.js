@@ -1,13 +1,10 @@
 import React from "react";
 import { MDBAccordion, MDBAccordionItem, MDBIcon } from "mdb-react-ui-kit";
 import DownloadApp from "../componenets/DownloadApp";
-import Footer from "./Footer";
-import Nav from "./Nav";
 
 export default function Faq() {
   return (
     <>
-      <Nav />
       <div className="faq_div">
         <p className="faq_title_text">FAQ</p>
         <p className="faq_p_text">
@@ -302,7 +299,6 @@ export default function Faq() {
         </p>
         <DownloadApp />
       </div>
-      <Footer />
     </>
   );
 }
