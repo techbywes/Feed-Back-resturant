@@ -21,7 +21,7 @@ function Resturants(props) {
               src={restaurant.imgdata}
               alt="Product"
             />
-            <h1 className="product_title">{restaurant.rname}</h1>
+            <h1 className="product_title tytle">{restaurant.rname}</h1>
             <div className="rate_price_div">
               <div className="price">{restaurant.price}</div>
               <div className="rating">

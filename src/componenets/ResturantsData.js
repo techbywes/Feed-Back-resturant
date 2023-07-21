@@ -1,3 +1,5 @@
+import trend from "../images/trend.png";
+
 const ResturantsData = [
   {
     id: 1,
@@ -10,8 +12,7 @@ const ResturantsData = [
     somedata: " 1175 + orders recently placed here",
     price: "$35",
     rating: "3.8",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    arrimg: trend,
   },
   {
     id: 2,
@@ -24,8 +25,7 @@ const ResturantsData = [
     somedata: " 2525 +orders recently placed here",
     price: "$50",
     rating: "3.9",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    arrimg: trend,
   },
   {
     id: 3,
@@ -36,10 +36,9 @@ const ResturantsData = [
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     address: "2962 Grant View",
     somedata: " 650 + orders recently placed here",
-    price: "₹70 for one",
+    price: "$65",
     rating: "4.2",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    arrimg: trend,
   },
   {
     id: 4,
@@ -52,8 +51,7 @@ const ResturantsData = [
     somedata: " 300 + orders recently placed here",
     price: "$21",
     rating: "3.8",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    arrimg: trend,
   },
   {
     id: 5,
@@ -66,8 +64,7 @@ const ResturantsData = [
     somedata: "1050 + orders recently placed here",
     price: "$17",
     rating: "4.0",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    arrimg: trend,
   },
   {
     id: 6,
@@ -80,8 +77,7 @@ const ResturantsData = [
     somedata: " 1100 + orders recently placed here",
     price: "$14",
     rating: "3.8",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    arrimg: trend,
   },
   {
     id: 7,
@@ -95,8 +91,7 @@ const ResturantsData = [
     somedata: "500 + orders recently placed here",
     price: "$30",
     rating: "3.8",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    arrimg: trend,
   },
   {
     id: 8,
@@ -109,8 +104,7 @@ const ResturantsData = [
     somedata: "500 + orders recently placed here",
     price: "$12",
     rating: "3.2",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    arrimg: trend,
   },
   {
     id: 9,
@@ -124,8 +118,7 @@ const ResturantsData = [
     somedata: "2525 + orders recently placed here",
     price: "$10",
     rating: "3.8",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    arrimg: trend,
   },
 ];
 
