@@ -1,7 +1,8 @@
-import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import animatedHeart from "../images/animated_heart.gif";
 
 function NoFavourites() {
+  const location = useLocation();
   return (
     <div className="NoFavourites">
       <div className="favourite_div__">
@@ -13,14 +14,9 @@ function NoFavourites() {
         <div className="explain_favourite_text_div">
           <p className="explain_favourite_text_">
             Touch the heart icon on any{" "}
-            <a href="#" className="link__change_color">
-              restaurant
-            </a>{" "}
-            or
-            <a href="#" className="link__change_color">
-              {" "}
-              hotel
-            </a>{" "}
+            <Link to="/Resturant" className={"/Resturant link__change_color"} >
+              resturants
+            </Link>{" "}
             and it will save them here as a favorite. You first need to{" "}
             <a href="#" className="link__change_color">
               register

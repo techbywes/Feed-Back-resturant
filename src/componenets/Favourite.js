@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { PRODUCTS } from "./Products";
 import { MyProductsContext } from "../context/Myproduct-context";
 import { MyFavouriteItems } from "./MyFavouriteItems";
+import FavoriteResturants from "./FavoriteResturants";
 
 import NoFavourites from "./NoFavourites";
 
@@ -12,6 +13,7 @@ function Favourite() {
   );
 
   return (
+    <>
     <div className="favourite_div__">
       <div className="general_menu_div">
         {PRODUCTS.map(product => {
@@ -21,12 +23,13 @@ function Favourite() {
               <p>Your Favorite Menu</p>
             </div>;
           }
-          return null; // Return null for products that are not favorites
+          return null;
         })}
         {!hasFavoriteItem && <NoFavourites />}{" "}
-        {/* Render NoFavourites only when there are no favorite items */}
       </div>
+      <FavoriteResturants/>
     </div>
+    </>
   );
 }
 
