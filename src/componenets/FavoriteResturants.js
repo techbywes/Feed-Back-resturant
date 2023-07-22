@@ -7,33 +7,42 @@ import ResturantsData from "./ResturantsData";
 function FavoriteResturants() {
   const { removeFromFavorite } = useContext(MyProductsContext);
 
-  // Create state to keep track of favorite items
-  const [favoriteItems, setFavoriteItems] = useState([]);
-
   // Load favorite items from local storage when the component mounts
-  useEffect(() => {
-    const storedFavorites = JSON.parse(localStorage.getItem("favoriteItems"));
-    if (storedFavorites && Array.isArray(storedFavorites)) {
-      setFavoriteItems(storedFavorites);
-    }
-  }, []);
+  const initialFavorites =
+    JSON.parse(localStorage.getItem("favoriteItems")) || [];
+  const [favoriteItems, setFavoriteItems] = useState(initialFavorites);
 
   // Function to handle removing items from favorites
-  const handleFavoriteClick = (id) => {
-    // Call the context function to remove from global favorites
-    removeFromFavorite(id);
-
-    // Remove the item from local state to update the UI
-    setFavoriteItems((prevFavorites) => prevFavorites.filter((itemId) => itemId !== id));
+  const handleFavoriteClick = id => {
+    if (favoriteItems.includes(id)) {
+      // Call the context function to remove from global favorites
+      removeFromFavorite(id);
+      // Remove the item from local state to update the UI
+      setFavoriteItems(prevFavorites =>
+        prevFavorites.filter(itemId => itemId !== id)
+      );
+    }
   };
 
+  // Save favorite items to local storage whenever the favoriteItems state changes
+  useEffect(() => {
+    localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems));
+  }, [favoriteItems]);
+
   return (
-    <div>
-      <div className="resturnat_div">
-        {ResturantsData.filter((restaurant) => favoriteItems.includes(restaurant.id)).map((restaurant) => (
+    <div className="resaturant_fav_div">
+        <p className="Fav_rest__text__">Your Favourite Restaurants</p>
+      <div className="resturnat_div2">
+        {ResturantsData.filter(restaurant =>
+          favoriteItems.includes(restaurant.id)
+        ).map(restaurant => (
           <div key={restaurant.id} className="section_container">
             <div className="img_text_">
-              <img className="product_img2" src={restaurant.imgdata} alt="Product" />
+              <img
+                className="product_img2"
+                src={restaurant.imgdata}
+                alt="Product"
+              />
               <h1 className="product_title tytle">{restaurant.rname}</h1>
               <div className="rate_price_div">
                 <div className="price">{restaurant.price}</div>
@@ -70,5 +79,6 @@ function FavoriteResturants() {
     </div>
   );
 }
+// ORGINAL INITIAL
 
 export default FavoriteResturants;

@@ -4,6 +4,7 @@ import Bestoftheday from "./Bestoftheday";
 import Besttest from "./Besttest";
 import TestimonialCarousel from "./Testimonial";
 import { Recently } from "./Recently";
+import FavoriteResturants from "./FavoriteResturants";
 
 
 
@@ -13,6 +14,7 @@ function Home() {
     <div className="Home_page_div_">
       <HeroSection />
       <Recently />
+      <FavoriteResturants/>
       <Bestoftheday />
       <TestimonialCarousel />
       <Besttest />

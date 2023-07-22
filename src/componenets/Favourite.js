@@ -26,8 +26,8 @@ function Favourite() {
           return null;
         })}
         {!hasFavoriteItem && <NoFavourites />}{" "}
+        <FavoriteResturants/>
       </div>
-      <FavoriteResturants/>
     </div>
     </>
   );

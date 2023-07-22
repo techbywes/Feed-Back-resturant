@@ -1627,6 +1627,32 @@ textarea {
   align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
+  padding-top: -20rem;
+}
+
+.resturnat_div2 {
+  background-color: #a0a603;
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.resaturant_fav_div{
+  border-top: 1px solid white;
+  background-color: #a0a603;
+ 
+}
+
+.Fav_rest__text__{
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding-top: 4rem;
+  letter-spacing: 0.1rem;
 }
 
 .productz_img {
@@ -1664,4 +1690,11 @@ textarea {
 .tytle{
   margin-top: 1rem;
 }
+
+
+.ur_fav_rest{
+  text-align: center;
+  padding-bottom: -10rem;
+}
+
 /* RESTURANT PAGE STYLING ENDS FROM HERE */

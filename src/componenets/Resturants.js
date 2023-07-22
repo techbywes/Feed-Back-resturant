@@ -14,10 +14,10 @@ function Resturants() {
   const [favoriteItems, setFavoriteItems] = useState([]);
 
   // Function to handle adding or removing items from favorites
-  const handleFavoriteClick = (id) => {
+  const handleFavoriteClick = id => {
     if (favoriteItems.includes(id)) {
       // Item is already in favorites, so remove it
-      setFavoriteItems(favoriteItems.filter((itemId) => itemId !== id));
+      setFavoriteItems(favoriteItems.filter(itemId => itemId !== id));
       removeFromFavorite(id); // Call the context function to remove from global favorites
     } else {
       // Item is not in favorites, so add it
@@ -43,10 +43,14 @@ function Resturants() {
   return (
     <div>
       <div className="resturnat_div">
-        {ResturantsData.map((restaurant) => (
+        {ResturantsData.map(restaurant => (
           <div key={restaurant.id} className="section_container">
             <div className="img_text_">
-              <img className="product_img2" src={restaurant.imgdata} alt="Product" />
+              <img
+                className="product_img2"
+                src={restaurant.imgdata}
+                alt="Product"
+              />
               <h1 className="product_title tytle">{restaurant.rname}</h1>
               <div className="rate_price_div">
                 <div className="price">{restaurant.price}</div>
@@ -74,7 +78,9 @@ function Resturants() {
                 {/* Check if the item is in favorites to display the appropriate heart icon */}
                 <img
                   className="favourite_product_heart"
-                  src={favoriteItems.includes(restaurant.id) ? heart_2 : heart_1}
+                  src={
+                    favoriteItems.includes(restaurant.id) ? heart_2 : heart_1
+                  }
                   alt="Favorite"
                   onClick={() => handleFavoriteClick(restaurant.id)}
                 />
@@ -85,9 +91,10 @@ function Resturants() {
       </div>
 
       {/* Display the favorite items on a separate page/component */}
-      <FavoriteResturants />
     </div>
   );
+
+  // ORGINAL USE THIS
 }
 
 export default Resturants;
