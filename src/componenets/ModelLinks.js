@@ -42,8 +42,8 @@ function ModelLinks() {
     navigate("/Faq", { replace: true });
   };
 
-  const ShowWriteReview = () => {
-    navigate("/WriteReviews", { replace: true });
+  const ShowFavorite = () => {
+    navigate("/Favourite", { replace: true });
   };
 
   return (
@@ -210,7 +210,7 @@ function ModelLinks() {
           <li className="model_li">
             <div className="img_icon_div">
               <img className="icon_img" src={myfavourite} />
-              <a className="new_model_a" href="#" onClick={ShowWriteReview}>
+              <a className="new_model_a" href="#" onClick={ShowFavorite}>
                 My Favourite
               </a>
             </div>
