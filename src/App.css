@@ -1734,6 +1734,14 @@ textarea {
     text-align: center;
   }
 
+  .search__result__{
+   width: 100%;
+  }
+
+.section_container{
+  max-width: 100rem;
+}
+
   .title_text{
     font-size: 3rem;
   }
@@ -1944,9 +1952,6 @@ textarea {
   .close__btn {
     width: 3rem;
     cursor: pointer;
-  }
-  .hero_img{
-    display: none;
   }
   /* Your CSS styles for laptops and desktops go here */
 }

@@ -7,13 +7,17 @@ import closeBtn from "../images/close-btn1.png";
 function Nav() {
   const [Isopen, setIsopen] = useState(false);
 
-  const handleClick = () => {
+  const toggleMenu = () => {
     setIsopen(!Isopen);
   };
 
   const location = useLocation();
   const isActiveLink = pathname => {
     return location.pathname === pathname ? "active" : "";
+  };
+
+  const handleLinkClick = () => {
+    setIsopen(false);
   };
 
   return (
@@ -87,26 +91,38 @@ function Nav() {
             <img
               className="open__btn"
               src={Isopen ? closeBtn : openBtn}
-              onClick={handleClick}
+              onClick={toggleMenu}
             />
           </div>
         </div>
         {Isopen && (
           <ul className="Nav__mobile">
             <li>
-              <Link to="/" className={isActiveLink("/")}>
+              <Link
+                to="/"
+                className={isActiveLink("/")}
+                onClick={handleLinkClick}
+              >
                 Home
               </Link>
             </li>
 
             <li>
-              <Link to="/About" className={isActiveLink("/About")}>
+              <Link
+                to="/About"
+                className={isActiveLink("/About")}
+                onClick={handleLinkClick}
+              >
                 About
               </Link>
             </li>
 
             <li>
-              <Link to="/Contact" className={isActiveLink("/Contact")}>
+              <Link
+                to="/Contact"
+                className={isActiveLink("/Contact")}
+                onClick={handleLinkClick}
+              >
                 Contact
               </Link>
             </li>
@@ -115,19 +131,28 @@ function Nav() {
               <Link
                 to="/WriteReviews"
                 className={isActiveLink("/WriteReviews")}
+                onClick={handleLinkClick}
               >
                 Write Review
               </Link>
             </li>
 
             <li>
-              <Link to="/Favourite" className={isActiveLink("/Favourite")}>
+              <Link
+                to="/Favourite"
+                className={isActiveLink("/Favourite")}
+                onClick={handleLinkClick}
+              >
                 My Favorites
               </Link>
             </li>
 
             <li>
-              <Link to="/Resturant" className={isActiveLink("/Resturant")}>
+              <Link
+                to="/Resturant"
+                className={isActiveLink("/Resturant")}
+                onClick={handleLinkClick}
+              >
                 Resturants
               </Link>
             </li>
@@ -138,7 +163,7 @@ function Nav() {
             </button>
 
             <li>
-              <Profile />
+              <Profile onClick={handleLinkClick} />
             </li>
           </ul>
         )}
