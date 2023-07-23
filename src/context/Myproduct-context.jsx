@@ -4,7 +4,7 @@ export const MyProductsContext = createContext(null);
 
 const getFavoriteItems = () => {
   const storedItems = localStorage.getItem("favoriteItems");
-  return storedItems ? JSON.parse(storedItems) : {};
+  return storedItems ? JSON.parse(storedItems) : [];
 };
 
 export const MyproductContextProvider = props => {
@@ -41,3 +41,4 @@ export const MyproductContextProvider = props => {
     </MyProductsContext.Provider>
   );
 };
+// ORIGINAL USE THIS
