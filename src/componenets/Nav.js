@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+
 import Profile from "../componenets/Profile";
 import openBtn from "../images/open-btn2.png";
 import closeBtn from "../images/close-btn1.png";
@@ -20,13 +21,20 @@ function Nav() {
     setIsopen(false);
   };
 
+  const handleLogoClick = () => {
+    setIsopen(false);
+  };
+
   return (
     <>
       <nav>
         <div className="logo_title_open_close__div">
           <div className="logo_div">
             <h1 className="logo_text">
-              <span className="food_text">FEED</span>BACK POST
+              <Link to="/" onClick={handleLogoClick}>
+                <span className="food_text">FEED</span>{" "}
+                <span className="back__text">BACK POST</span>
+              </Link>
             </h1>
           </div>
         </div>
@@ -84,9 +92,13 @@ function Nav() {
         <div className="logo_title_open_close__div">
           <div className="logo_div">
             <h1 className="logo_text">
-              <span className="food_text">FEED</span>BACK POST
+              <Link to="/" onClick={handleLogoClick}>
+                <span className="food_text">FEED</span>{" "}
+                <span className="back__text">BACK POST</span>
+              </Link>
             </h1>
           </div>
+
           <div className="open_close__btn_div">
             <img
               className="open__btn"

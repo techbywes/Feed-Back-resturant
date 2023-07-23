@@ -112,7 +112,13 @@ a.active {
 .food_text {
   color: #a0a603;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-shadow: rgba(0, 0, 0, 0.708);
+}
+
+.back__text {
+  font-weight: 600;
+  font-size: 1.3rem;
   text-shadow: rgba(0, 0, 0, 0.708);
 }
 
@@ -1715,7 +1721,7 @@ textarea {
 }
 /* RESTURANT PAGE STYLING ENDS FROM HERE */
 
-.mobile_nav{
+.mobile_nav {
   display: none;
 }
 
@@ -1734,44 +1740,53 @@ textarea {
     text-align: center;
   }
 
-  .search__result__{
-   width: 100%;
+  .profile_general_div {
+    display: none;
   }
 
-.section_container{
-  max-width: 100rem;
-}
+  .search__result__ {
+    width: 100%;
+  }
 
-  .title_text{
+  .section_container {
+    max-width: 100rem;
+  }
+
+  .title_text {
     font-size: 3rem;
   }
 
-  .ourbest_meal_title_text{
+  .ourbest_meal_title_text {
     font-size: 1.5rem;
   }
-  nav{
+  nav {
     display: none;
   }
 
-  .bestmeal_para_text{
+  .bestmeal_para_text {
     font-size: 1.1rem;
   }
 
-  .nav_ul{
+  .nav_ul {
     display: none;
   }
 
-  .Nav__mobile{
+  .Nav__mobile {
     display: block;
   }
   .Nav__mobile > li {
     margin: 3.5rem 0;
   }
 
-  .logo_text,
-  .food_text {
+  .logo_text {
     margin-top: 0.6rem;
     font-size: 1.1rem;
+  }
+
+  .back__text {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: rgba(0, 0, 0, 0.708);
   }
   .logo_title_open_close__div {
     padding: 1rem;
@@ -1797,7 +1812,7 @@ textarea {
     cursor: pointer;
   }
 
-  .hero_img{
+  .hero_img {
     display: none;
   }
   /* Your CSS styles for mobile phones go here */
@@ -1811,21 +1826,30 @@ textarea {
     text-align: center;
   }
 
-  .nav_ul{
+  .profile_general_div {
     display: none;
   }
 
-  .Nav__mobile{
+  .nav_ul {
+    display: none;
+  }
+
+  .Nav__mobile {
     display: block;
   }
   .Nav__mobile > li {
     margin: 3.5rem 0;
   }
 
-  .logo_text,
-  .food_text {
+  .logo_text {
     margin-top: 0.6rem;
     font-size: 1.1rem;
+  }
+
+  .back__text {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: rgba(0, 0, 0, 0.708);
   }
   .logo_title_open_close__div {
     padding: 1rem;
@@ -1850,7 +1874,7 @@ textarea {
     width: 3rem;
     cursor: pointer;
   }
-  .hero_img{
+  .hero_img {
     display: none;
   }
 }
@@ -1862,21 +1886,28 @@ textarea {
     text-align: center;
   }
 
-  .nav_ul{
+  .profile_general_div {
+    display: none;
+  }
+  .nav_ul {
     display: none;
   }
 
-  .Nav__mobile{
+  .Nav__mobile {
     display: block;
   }
   .Nav__mobile > li {
     margin: 3.5rem 0;
   }
-
-  .logo_text,
-  .food_text {
+  .logo_text {
     margin-top: 0.6rem;
     font-size: 1.1rem;
+  }
+
+  .back__text {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: rgba(0, 0, 0, 0.708);
   }
   .logo_title_open_close__div {
     padding: 1rem;
@@ -1901,7 +1932,7 @@ textarea {
     width: 3rem;
     cursor: pointer;
   }
-  .hero_img{
+  .hero_img {
     display: none;
   }
   /* Your CSS styles for tablets and small laptops go here */
@@ -1914,21 +1945,26 @@ textarea {
     text-align: center;
   }
 
-  .nav_ul{
+  .nav_ul {
     display: none;
   }
 
-  .Nav__mobile{
+  .Nav__mobile {
     display: block;
   }
   .Nav__mobile > li {
     margin: 3.5rem 0;
   }
 
-  .logo_text,
-  .food_text {
+  .logo_text {
     margin-top: 0.6rem;
     font-size: 1.1rem;
+  }
+
+  .back__text {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: rgba(0, 0, 0, 0.708);
   }
   .logo_title_open_close__div {
     padding: 1rem;
