@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* NAV STYLING STARTS FROM HERE */
 nav {
@@ -16,6 +19,11 @@ nav {
   align-items: center;
   width: 100%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.open__btn,
+.close__btn {
+  display: none;
 }
 
 body {
@@ -1640,13 +1648,12 @@ textarea {
   gap: 4rem;
 }
 
-.resaturant_fav_div{
+.resaturant_fav_div {
   border-top: 1px solid white;
   background-color: #a0a603;
- 
 }
 
-.Fav_rest__text__{
+.Fav_rest__text__ {
   text-align: center;
   color: white;
   font-weight: 800;
@@ -1659,42 +1666,294 @@ textarea {
   width: 20rem;
 }
 
-
-.product_img2{
-  width: 12rem ;
+.product_img2 {
+  width: 12rem;
   height: 12rem;
   border-radius: 50%;
 }
 
-.thundeer_rate{
+.thundeer_rate {
   width: 2rem;
 }
 
-.thunder_street_div{
+.thunder_street_div {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.street__rest{
+.street__rest {
   margin-top: 1rem;
   font-size: 0.9rem;
   color: white;
 }
 
-.orderz_count__{
+.orderz_count__ {
   width: 12rem;
   color: rgb(84, 84, 28);
 }
 
-.tytle{
+.tytle {
   margin-top: 1rem;
 }
 
-
-.ur_fav_rest{
+.ur_fav_rest {
   text-align: center;
   padding-bottom: -10rem;
 }
 
+.top_rated__ {
+  background-color: #a0a603;
+}
+
+.top_rated_text {
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  margin-bottom: -15rem;
+  padding-top: 8rem;
+}
 /* RESTURANT PAGE STYLING ENDS FROM HERE */
+
+.mobile_nav{
+  display: none;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+/* MEDIA QUERY STARTS FROM HERE */
+/* Extra Small Devices (Mobile Phones) */
+@media (width <= 575px) {
+  .mobile_nav {
+    display: block;
+    text-align: center;
+  }
+
+  .title_text{
+    font-size: 3rem;
+  }
+
+  .ourbest_meal_title_text{
+    font-size: 1.5rem;
+  }
+  nav{
+    display: none;
+  }
+
+  .bestmeal_para_text{
+    font-size: 1.1rem;
+  }
+
+  .nav_ul{
+    display: none;
+  }
+
+  .Nav__mobile{
+    display: block;
+  }
+  .Nav__mobile > li {
+    margin: 3.5rem 0;
+  }
+
+  .logo_text,
+  .food_text {
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+  }
+  .logo_title_open_close__div {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .open__btn,
+  .close__btn {
+    display: block;
+  }
+  .open_close__btn_div {
+    width: auto;
+  }
+  .open__btn {
+    width: 3rem;
+    cursor: pointer;
+  }
+
+  .close__btn {
+    width: 3rem;
+    cursor: pointer;
+  }
+
+  .hero_img{
+    display: none;
+  }
+  /* Your CSS styles for mobile phones go here */
+}
+
+/* Small Devices (Mobile Phones and Small Tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Your CSS styles for small tablets and mobile phones go here */
+  .mobile_nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav_ul{
+    display: none;
+  }
+
+  .Nav__mobile{
+    display: block;
+  }
+  .Nav__mobile > li {
+    margin: 3.5rem 0;
+  }
+
+  .logo_text,
+  .food_text {
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+  }
+  .logo_title_open_close__div {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .open__btn,
+  .close__btn {
+    display: block;
+  }
+  .open_close__btn_div {
+    width: auto;
+  }
+  .open__btn {
+    width: 3rem;
+    cursor: pointer;
+  }
+
+  .close__btn {
+    width: 3rem;
+    cursor: pointer;
+  }
+  .hero_img{
+    display: none;
+  }
+}
+
+/* Medium Devices (Tablets and Small Laptops) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .mobile_nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav_ul{
+    display: none;
+  }
+
+  .Nav__mobile{
+    display: block;
+  }
+  .Nav__mobile > li {
+    margin: 3.5rem 0;
+  }
+
+  .logo_text,
+  .food_text {
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+  }
+  .logo_title_open_close__div {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .open__btn,
+  .close__btn {
+    display: block;
+  }
+  .open_close__btn_div {
+    width: auto;
+  }
+  .open__btn {
+    width: 3rem;
+    cursor: pointer;
+  }
+
+  .close__btn {
+    width: 3rem;
+    cursor: pointer;
+  }
+  .hero_img{
+    display: none;
+  }
+  /* Your CSS styles for tablets and small laptops go here */
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mobile_nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav_ul{
+    display: none;
+  }
+
+  .Nav__mobile{
+    display: block;
+  }
+  .Nav__mobile > li {
+    margin: 3.5rem 0;
+  }
+
+  .logo_text,
+  .food_text {
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+  }
+  .logo_title_open_close__div {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .open__btn,
+  .close__btn {
+    display: block;
+  }
+  .open_close__btn_div {
+    width: auto;
+  }
+  .open__btn {
+    width: 3rem;
+    cursor: pointer;
+  }
+
+  .close__btn {
+    width: 3rem;
+    cursor: pointer;
+  }
+  .hero_img{
+    display: none;
+  }
+  /* Your CSS styles for laptops and desktops go here */
+}
+
+/* Extra Large Devices (Large Desktops and High-resolution Monitors) */
+@media (min-width: 1200px) {
+  /* Your CSS styles for large desktops and high-resolution monitors go here */
+}
+
+/* MEDIA QUERY ENDS FROM HERE */

@@ -41,7 +41,9 @@ function Resturants() {
   }, []);
 
   return (
-    <div>
+    <div className="top_rated__">
+       <h2 className="top_rated_text">Top Rated This Week</h2>
+      <p className="bestmeal_para_text"></p>
       <div className="resturnat_div">
         {ResturantsData.map(restaurant => (
           <div key={restaurant.id} className="section_container">
