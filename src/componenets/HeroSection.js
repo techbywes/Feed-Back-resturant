@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import buggerimage from "../images/bugger.png";
 import Search from "./Search";
+import SearchResult from "./SearchResult";
+import ResturantsData from "./ResturantsData";
 
 function HeroSection() {
+  const [searchResults, setSearchResults] = useState([]);
+  const handleSearch = query => {
+    const filteredResults = ResturantsData.filter(restaurant =>
+      restaurant.rname.toLowerCase().includes(query.toLowerCase())
+    );
+    setSearchResults(filteredResults);
+  };
+
   return (
     <section className="hero_div">
       <div className="text_btn_div">
         <div className="title_div">
-          <h1 className="title_text">FEED-BACK POST RESTURANT</h1>
+          <h1 className="title_text">FEED-BACK POST RESTAURANT</h1>
           <div className="line_tex"></div>
         </div>
         <div className="paragraphtext_div">
@@ -16,12 +26,14 @@ function HeroSection() {
             <span className="feed_back_text">FEED BACK POST</span> Guide
           </p>
         </div>
-        <Search />
-        {/* <button className="learnmore_btn">Learn about us</button> */}
+        <Search onSearch={handleSearch} />
       </div>
       <div className="img_div">
         <img className="hero_img" src={buggerimage} alt="" />
       </div>
+      {searchResults.length > 0 && (
+        <SearchResult searchResults={searchResults} />
+      )}
     </section>
   );
 }

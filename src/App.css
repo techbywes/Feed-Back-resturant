@@ -139,7 +139,7 @@ a.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 .title_div {
   margin-bottom: 3rem;

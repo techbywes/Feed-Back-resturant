@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { MDBTextArea } from "mdb-react-ui-kit";
 import Search from "../componenets/Search";
 import Customer_review from "../images/customer-review.png";
+import SearchResult from "./SearchResult";
+import ResturantsData from "./ResturantsData";
 
 function WriteReviews() {
   const [text, setText] = useState("");
@@ -13,6 +15,16 @@ function WriteReviews() {
     event.target.style.height = "auto";
     event.target.style.height = event.target.scrollHeight + "px";
   };
+
+
+  const [searchResults, setSearchResults] = useState([]);
+  const handleSearch = query => {
+    const filteredResults = ResturantsData.filter(restaurant =>
+      restaurant.rname.toLowerCase().includes(query.toLowerCase())
+    );
+    setSearchResults(filteredResults);
+  };
+
   return (
     <>
       <div className="login-reg_div">a</div>
@@ -26,11 +38,16 @@ function WriteReviews() {
             </p>
           </div>
           <div className="write_review_icon__">
-            <img className="rewviews_icon_img_" src={Customer_review} alt="reviews icon" />
+            <img
+              className="rewviews_icon_img_"
+              src={Customer_review}
+              alt="reviews icon"
+            />
           </div>
         </div>
 
-        <Search />
+        <Search onSearch={handleSearch} />
+      <SearchResult searchResults={searchResults} />
         <TestimonialCarouse2 />
         <div className="reviews_div">
           <StarRating2 />
